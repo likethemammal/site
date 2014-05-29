@@ -1,6 +1,6 @@
 body {
-    margin: 45px 0;
     color: #333;
+    margin: 45px 0;
     background: #a2ab91;
     font-family: "abril-text", serif;
     font-size: 14px;
@@ -53,6 +53,14 @@ a:hover {
     color: #00ABD6;
 }
 
+#bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 #main {
     padding: 15px;
 }
@@ -64,6 +72,7 @@ a:hover {
     padding: 15px 15px;
     margin: 0 auto 15px auto;
     border-radius: 2px;
+    
 }
 
 .group:last-child {
@@ -182,8 +191,8 @@ section {
 }
 
 @media only screen and (min-width: 1000px) {
-    body {
-        background: url(bg.jpg) top center no-repeat fixed #a2ab91;
+    #bg {
+        background: url(bg.jpg) top center no-repeat #a2ab91;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -191,8 +200,8 @@ section {
 }
 
 @media only screen and (max-width: 1000px) {
-    body {
-        background: url(bg-1200px.jpg) top center no-repeat fixed #a2ab91;
+    #bg {
+        background: url(bg-1200px.jpg) top center no-repeat #a2ab91;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
