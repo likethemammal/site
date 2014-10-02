@@ -97,20 +97,22 @@ a:hover {
 }
 
 .title {
-    display: inline-block;
+    display: block;
     float: left;
     width: 30%;
-    padding: 0 5px;
+    padding: 0;
     text-align: right;
     font-style: italic;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .desc {
-    display: inline-block;
+    display: block;
     float: left;
     width: 70%;
-    padding: 0 5px;
+    padding: 0 5px 0 10px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -174,13 +176,13 @@ section {
     padding-left: 5px;
 }
 
-.clearfix:before,
-.clearfix:after {
+.cf:before,
+.cf:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.clearfix:after {
+.cf:after {
     clear: both;
 }
 
@@ -222,5 +224,21 @@ section {
         max-width: 100%;
         padding: 15px;
         float: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .item {
+        margin-bottom: 16px;
+    }
+
+    .title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .desc {
+        width: 100%;
+        padding: 0;
     }
 }
