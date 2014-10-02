@@ -8,36 +8,6 @@ body {
     line-height: 24px;
 }
 
-h1 {
-    margin: 0;
-    margin-left: 205px;
-    padding: 0;
-    font-size: 24pt;
-    font-weight: normal;
-    font-family: "Helvetica Neue", sans-serif;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-h2 {
-    margin: 15px 0;
-    padding: 0;
-    color: #1d1d25;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-h3 {
-    margin: 15px 0 5px;
-    padding: 0;
-    color: #9d9d85;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -53,6 +23,9 @@ a:hover {
     color: #00ABD6;
 }
 
+
+/*  General Styles  */
+
 #bg {
     position: fixed;
     top: 0;
@@ -64,6 +37,26 @@ a:hover {
 #main {
     padding: 15px;
 }
+
+.header-text {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header-title {
+    width: 100px;
+    margin: 15px auto 0 30%;
+    padding: 0 0 0 10px;
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+/*  Group Styles  */
 
 .group {
     background: rgba(255,255,255,0.8);
@@ -79,21 +72,28 @@ a:hover {
     margin-bottom: 0;
 }
 
-/* item styles */
-
-.item {
-    line-height: 24px;
-    display: block;
-    margin-bottom: 8px;
+.group-title {
+    margin-left: 30%;
+    padding-left: 5px;
 }
 
-.item:after {
-    content: ".";
+.group-title h3 {
+    margin: 15px 0 5px;
+    padding: 0;
+    color: #9d9d85;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+/*  Item Styles  */
+
+.item {
     display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+    line-height: 24px;
+    margin-bottom: 8px;
 }
 
 .title {
@@ -120,7 +120,6 @@ a:hover {
 
 /* Bio Styles */
 
-
 #bio p {
     width: 70%;
     max-width: 400px;
@@ -142,39 +141,8 @@ a:hover {
     float: left;
 }
 
-/* Skeleton */
 
-header {
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.header-text {
-    margin: 15px auto 0 30%;
-    color: #fff;
-    padding: 0 0 0 10px;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    width: 100px;
-}
-
-.header p {
-    height: 30px;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-section {
-    clear: both;
-}
-
-.heading {
-    margin-left: 30%;
-    padding-left: 5px;
-}
+/*  Misc Styles  */
 
 .cf:before,
 .cf:after {
@@ -191,6 +159,9 @@ section {
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
+
+
+/*  Media Queries  */
 
 @media only screen and (min-width: 1000px) {
     #bg {
