@@ -27,7 +27,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "npm i -g webpack webpack-dev-server@2 nodemon",
     "start:jekyll": "bundle exec jekyll serve",
-    "build": "babel-node ./node_modules/webpack -- -p",
+    "build:stupid": "babel-node ./node_modules/webpack/bin/webpack.js",
+    "build": "babel-node ./node_modules/webpack -p",
     "build:watch": "nodemon babel-node ./node_modules/webpack -- -p",
     "dev": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "dev-on-server": "nodemon ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --exec babel-node"

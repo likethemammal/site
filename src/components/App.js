@@ -1,20 +1,41 @@
 import React, { Component } from 'react'
-import Example from './Example.js'
+import Section from './Section.js'
+
+import { socials } from './assets'
+import _ from 'lodash'
+
+import FloatingCard from './FloatingCard'
+import BottomCard from './BottomCard'
+
 
 export default class App extends Component {
 
-    onButtonClick = () => {
-        const { changeAction, on } = this.props
-
-        changeAction(!on)
-    }
-
     render() {
-        const { on } = this.props
+
+        const data = window._jeykll_data
+
+        const sections = Object.keys(data).map((key, i) => <Section
+            {...{
+                key: key,
+                title: key,
+                values: data[key]
+            }}
+        />)
+
+        const socialValues = _.map(socials, (({label, link, icon}) => ({
+            link,
+            name: label,
+            blurb: <a href={link}>{link}</a>,
+        })))
 
         return <div>
-            <div onClick={this.onButtonClick}>Click Me!</div>
-            {on && <Example/>}
+            {sections}
+            <Section
+                title="socials"
+                values={socialValues}
+            />
+            <BottomCard />
+            <FloatingCard />
         </div>
     }
 }

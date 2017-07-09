@@ -8,10 +8,12 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //--remove _posts
 //--import data into js through window
 //--clean up repo dirs
-//create repo for example
-//create _data for each section
-//remove redux
+//--create repo for example
+//--create _data for each section
+//--remove redux
+//do styling of site
 
 
+//answer stackoverflow question with jsonify
 //all other projects on Github
 
