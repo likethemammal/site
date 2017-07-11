@@ -7,11 +7,9 @@ import {
 
 export default class Avatar extends Component {
     render() {
-        return <div className={css.container}>
-            <img
-                src={PROFILE_IMAGE_SRC}
-                className={css.image}
-            />
-        </div>
+        return <img
+            src={PROFILE_IMAGE_SRC}
+            className={css.container}
+        />
     }
 }

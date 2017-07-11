@@ -19,6 +19,10 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //use new profile image
 //professional section
 //change app.js to index.js
+//rename card to bio everywhere
+//create items component and separate from section component
+//do semantic html everywhere
+//fix socials section (name contact, fix styles, fix formating of links)
 
 
 //answer stackoverflow question with jsonify

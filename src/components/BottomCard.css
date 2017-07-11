@@ -1,7 +1,28 @@
 .container {
+    composes: container from './Section.css';
+}
 
+.inner {
+    composes: cf from '../general.css';
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .icon {
     width: 60px;
+}
+
+.blurb {
+    width: 70%;
+    max-width: 400px;
+    padding-left: 10px;
+    margin: 0;
+    float: left;
+}
+
+.avatarContainer {
+    width: 30%;
+    float: left;
+    max-width: 100px;
 }

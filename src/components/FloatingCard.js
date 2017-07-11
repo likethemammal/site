@@ -6,6 +6,9 @@ import css from './FloatingCard.css'
 import { socials } from './assets'
 import Avatar from './Avatar'
 
+import svg from '../assets/stackoverflow.svg'
+import SVG from './SVG'
+
 export default class FloatingCard extends Component {
     render() {
 
@@ -23,6 +26,9 @@ export default class FloatingCard extends Component {
         return <div className={css.container}>
             <Avatar/>
             {els}
+            <div className={css.icon}>
+                <SVG raw={svg}/>
+            </div>
         </div>
     }
 }
