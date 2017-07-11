@@ -8,7 +8,7 @@
 }
 
 .inner {
-    width: 285px;
+    width: 305px;
     float: left;
     padding-top: 10px;
 }
@@ -29,17 +29,20 @@
 .link {
     composes: cf from '../general.css';
     float: left;
-    margin: 0 15px 15px 0;
+    margin: 0 5px 15px 0;
+    min-width: 100px;
 }
 
 .icon {
     float: left;
     width: 30px;
-    margin-right: 10px;
+    margin-right: 7px;
+    height: 25px;
+    line-height: 46px;
 }
 
 .label {
-    line-height: 31px;
+    line-height: 3px;
     float: left;
-    font-size: 15px;
+    font-size: 13px;
 }

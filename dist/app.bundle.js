@@ -29013,7 +29013,7 @@ exports.i(__webpack_require__(16), undefined);
 exports.i(__webpack_require__(37), undefined);
 
 // module
-exports.push([module.i, ".FloatingCard-container {\n    margin: 0;\n}\n\n.FloatingCard-content {\n\n}\n\n.FloatingCard-inner {\n    width: 285px;\n    float: left;\n    padding-top: 10px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 15px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 15px 15px 0;\n}\n\n.FloatingCard-icon {\n    float: left;\n    width: 30px;\n    margin-right: 10px;\n}\n\n.FloatingCard-label {\n    line-height: 31px;\n    float: left;\n    font-size: 15px;\n}", ""]);
+exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 10px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 15px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 5px 15px 0;\n    min-width: 100px;\n}\n\n.FloatingCard-icon {\n    float: left;\n    width: 30px;\n    margin-right: 7px;\n    height: 25px;\n    line-height: 46px;\n}\n\n.FloatingCard-label {\n    line-height: 3px;\n    float: left;\n    font-size: 13px;\n}", ""]);
 
 // exports
 exports.locals = {
