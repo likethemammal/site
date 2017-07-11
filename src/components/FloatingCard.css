@@ -1,3 +1,39 @@
 .container {
+    composes: cf from '../general.css';
+    height: 100px;
+    margin: 0 30px 15px 20px;
+}
 
+.avatar {
+    composes: container from './Avatar.css';
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.socials {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    margin-bottom: 30px;
+}
+
+.link {
+    composes: cf from '../general.css';
+    float: left;
+    margin: 15px;
+
+}
+
+.icon {
+    float: left;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.label {
+    line-height: 31px;
+    float: left;
+    font-size: 15px;
 }

@@ -9,8 +9,36 @@ import BottomCard from './BottomCard'
 
 import css from './App.css'
 
+import { isNearBottom } from '../utils'
+
+const BOTTOM_OFFSET = 100
+
 
 export default class App extends Component {
+
+    constructor() {
+        super()
+
+        this.state = {
+            bottom: isNearBottom(BOTTOM_OFFSET)
+        }
+    }
+
+    onScroll = () => {
+
+        this.setState({
+            bottom: isNearBottom(BOTTOM_OFFSET)
+        })
+
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.onScroll)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.onScroll, false)
+    }
 
     render() {
 
@@ -30,7 +58,7 @@ export default class App extends Component {
             blurb: <a href={link}>{link}</a>,
         })))
 
-        return <div className={css.container}>
+        return <div ref="view" className={css.container}>
 
             <header className={css.header}>
                 <h1 className={css.headerText}>
@@ -45,7 +73,13 @@ export default class App extends Component {
                     values={socialValues}
                 />
                 <BottomCard />
-                <FloatingCard />
+
+            </div>
+
+            <div className={!this.state.bottom ? css.gradient : css.hidden}>
+                <div className={css.floatingInner}>
+                    <FloatingCard />
+                </div>
             </div>
         </div>
     }

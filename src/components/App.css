@@ -2,7 +2,14 @@
 }
 
 .inner {
-    padding: 15px
+    padding: 15px;
+    margin-bottom: 125px;
+}
+
+.floatingInner {
+    margin: 0 auto;
+    max-width: 850px;
+    margin-left: 30%;
 }
 
 .header {
@@ -20,4 +27,23 @@
     font-family: "Helvetica Neue", sans-serif;
     font-weight: normal;
     color: #fff;
+}
+
+.gradient {
+    background: white;
+    padding-top: 25px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+
+.hidden {
+    composes: gradient;
+    opacity: 0;
+    visibility: hidden;
 }

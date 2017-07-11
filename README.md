@@ -23,6 +23,7 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //create items component and separate from section component
 //do semantic html everywhere
 //fix socials section (name contact, fix styles, fix formating of links)
+//use rems for things
 
 
 //answer stackoverflow question with jsonify

@@ -6,7 +6,7 @@
     composes: cf from '../general.css';
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .icon {

@@ -6,10 +6,17 @@ import {
 } from './assets'
 
 export default class Avatar extends Component {
+
+    static defaultProps = {
+        className: css.container,
+    }
+
     render() {
+        const { className } = this.props
+
         return <img
             src={PROFILE_IMAGE_SRC}
-            className={css.container}
+            className={className}
         />
     }
 }
