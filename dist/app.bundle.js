@@ -4010,7 +4010,7 @@ var socials = exports.socials = {
 
 var PROFILE_IMAGE_SRC = exports.PROFILE_IMAGE_SRC = 'https://avatars1.githubusercontent.com/u/3430841';
 
-var PROFILE_DESC = exports.PROFILE_DESC = 'This is the story of me being on a plane with no internet';
+var PROFILE_DESC = exports.PROFILE_DESC = 'My name is Chris. I\'m a developer, longboarder, chillwave-lover, and doer of things. I build games, lead dev teams, and I\'m passionate about web tech.';
 
 /***/ }),
 /* 29 */
@@ -27802,11 +27802,19 @@ var FloatingCard = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { className: _FloatingCard2.default.container },
-                _react2.default.createElement(_Avatar2.default, { className: _FloatingCard2.default.avatar }),
                 _react2.default.createElement(
                     'div',
-                    { className: _FloatingCard2.default.socials },
-                    els
+                    { className: _FloatingCard2.default.content },
+                    _react2.default.createElement(_Avatar2.default, { className: _FloatingCard2.default.avatar }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _FloatingCard2.default.inner },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FloatingCard2.default.socials },
+                            els
+                        )
+                    )
                 )
             );
         }
@@ -28961,7 +28969,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, ".App-container {\n}\n\n.App-inner {\n    padding: 15px;\n    margin-bottom: 125px;\n}\n\n.App-floatingInner {\n    margin: 0 auto;\n    max-width: 850px;\n    margin-left: 30%;\n}\n\n.App-header {\n    width: 100%;\n    max-width: 850px;\n    margin: 0 auto;\n}\n\n.App-headerText {\n    width: 100px;\n    margin: 15px auto 0 30%;\n    padding: 0 0 0 10px;\n    text-transform: uppercase;\n    font-size: 20px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-weight: normal;\n    color: #fff;\n}\n\n.App-gradient {\n    background: white;\n    padding-top: 25px;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    visibility: visible;\n    opacity: 1;\n    -webkit-transition: opacity 600ms, visibility 600ms;\n    transition: opacity 600ms, visibility 600ms;\n}\n\n.App-hidden {\n    opacity: 0;\n    visibility: hidden;\n}", ""]);
+exports.push([module.i, ".App-container {\n}\n\n.App-inner {\n    padding: 15px;\n    margin-bottom: 125px;\n}\n\n.App-floatingInner {\n    margin: 0 auto;\n    max-width: 850px;\n}\n\n.App-header {\n    width: 100%;\n    max-width: 850px;\n    margin: 0 auto;\n}\n\n.App-headerText {\n    width: 100px;\n    margin: 15px auto 0 30%;\n    padding: 0 0 0 10px;\n    text-transform: uppercase;\n    font-size: 20px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-weight: normal;\n    color: #fff;\n}\n\n.App-gradient {\n    background: white;\n    padding-top: 25px;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    visibility: visible;\n    opacity: 1;\n    -webkit-transition: opacity 600ms, visibility 600ms;\n    transition: opacity 600ms, visibility 600ms;\n}\n\n.App-hidden {\n    opacity: 0;\n    visibility: hidden;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -29005,11 +29013,13 @@ exports.i(__webpack_require__(16), undefined);
 exports.i(__webpack_require__(37), undefined);
 
 // module
-exports.push([module.i, ".FloatingCard-container {\n    height: 100px;\n    margin: 0 30px 15px 20px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 15px;\n    margin-bottom: 25px;\n}\n\n.FloatingCard-socials {\n    position: relative;\n    top: 50%;\n    transform: translateY(-50%);\n    float: left;\n    margin-bottom: 30px;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 15px;\n\n}\n\n.FloatingCard-icon {\n    float: left;\n    width: 30px;\n    margin-right: 10px;\n}\n\n.FloatingCard-label {\n    line-height: 31px;\n    float: left;\n    font-size: 15px;\n}", ""]);
+exports.push([module.i, ".FloatingCard-container {\n    margin: 0;\n}\n\n.FloatingCard-content {\n\n}\n\n.FloatingCard-inner {\n    width: 285px;\n    float: left;\n    padding-top: 10px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 15px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 15px 15px 0;\n}\n\n.FloatingCard-icon {\n    float: left;\n    width: 30px;\n    margin-right: 10px;\n}\n\n.FloatingCard-label {\n    line-height: 31px;\n    float: left;\n    font-size: 15px;\n}", ""]);
 
 // exports
 exports.locals = {
 	"container": "FloatingCard-container " + __webpack_require__(16).locals["cf"] + "",
+	"content": "FloatingCard-content",
+	"inner": "FloatingCard-inner",
 	"avatar": "FloatingCard-avatar " + __webpack_require__(37).locals["container"] + "",
 	"socials": "FloatingCard-socials",
 	"link": "FloatingCard-link " + __webpack_require__(16).locals["cf"] + "",

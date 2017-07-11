@@ -25,9 +25,13 @@ export default class FloatingCard extends Component {
         }))
 
         return <div className={css.container}>
-            <Avatar className={css.avatar}/>
-            <div className={css.socials}>
-                {els}
+            <div className={css.content}>
+                <Avatar className={css.avatar}/>
+                <div className={css.inner}>
+                    <div className={css.socials}>
+                        {els}
+                    </div>
+                </div>
             </div>
         </div>
     }

@@ -1,7 +1,16 @@
 .container {
     composes: cf from '../general.css';
-    height: 100px;
-    margin: 0 30px 15px 20px;
+    margin-right: 100px;
+}
+
+.content {
+    margin-left: 30%;
+}
+
+.inner {
+    width: 285px;
+    float: left;
+    padding-top: 10px;
 }
 
 .avatar {
@@ -9,21 +18,18 @@
     float: left;
     margin-right: 15px;
     margin-bottom: 25px;
+    height: 100px;
+
 }
 
 .socials {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     float: left;
-    margin-bottom: 30px;
 }
 
 .link {
     composes: cf from '../general.css';
     float: left;
-    margin: 15px;
-
+    margin: 0 15px 15px 0;
 }
 
 .icon {
