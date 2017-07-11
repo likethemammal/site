@@ -13,6 +13,11 @@ export const socials = {
         label: 'Email',
         link: 'mailto:dolphin@likethemammal.com',
         icon: 'email'
+    },
+    stackoverflow: {
+        label: 'StackOverflow',
+        link: 'https://stackoverflow.com/users/2687479/chris-dolphin?tab=answers',
+        icon: 'stackoverflow'
     }
 }
 
