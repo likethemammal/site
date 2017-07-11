@@ -2,8 +2,11 @@
 <html>
 
 <head>
-    <title>Your app name</title>
     <meta charset="utf-8">
+    <title>{{ site.data.static.title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 </head>
 
 <body>
@@ -11,7 +14,7 @@
 <div id="app"></div>
 
 <script>
-    window._jeykll_data = {{ site.data | jsonify }}
+    window._jekyll_data = {{ site.data.sections | jsonify }}
 </script>
 
 <script src="/dist/app.bundle.js"></script>

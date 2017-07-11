@@ -12,7 +12,7 @@ export default class App extends Component {
 
     render() {
 
-        const data = window._jeykll_data
+        const data = window._jekyll_data
 
         const sections = Object.keys(data).map((key, i) => <Section
             {...{

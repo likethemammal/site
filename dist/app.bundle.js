@@ -27440,7 +27440,7 @@ var App = function (_Component) {
         key: 'render',
         value: function render() {
 
-            var data = window._jeykll_data;
+            var data = window._jekyll_data;
 
             var sections = Object.keys(data).map(function (key, i) {
                 return _react2.default.createElement(_Section2.default, {
