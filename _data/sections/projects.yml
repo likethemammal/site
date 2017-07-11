@@ -1,12 +1,29 @@
-- name: visualizer-micro
-  link: http://example.com
-  blurb: So lorem ipsum for the example to use So lorem ipsum for the example to useasdfffffffffffffffffffffffffffffffffff nsdf s fsf sdfsdfdfs fsdf sf
+- name: gamepad-micro
+  link: http://likethemammal.github.io/gamepad-micro/example.html
+  blurb: Library that interfaces with the Gamepad API and publishes gamepad update events. Used in DaisywheelJS. <a target="_blank" href="http://likethemammal.github.io/gamepad-micro/example.html">Live Demo</a>
 
 - name: visualizer-micro
-  link: http://example.com
-  blurb: So lorem ipsum for the example to use So lorem ipsum for the example to useasdfffffffffffffffffffffffffffffffffff nsdf s fsf sdfsdfdfs fsdf sf
+  link: http://likethemammal.github.io/visualizer-micro/example.html
+  blurb: A JS micro library for just the getSpectrum and getWaveform methods from <a target="_blank" href="https://github.com/jsantell/dancer.js">Dancer.js</a> using Web Audio API. <a target="_blank" href="https://http://likethemammal.github.io/visualizer-micro/example.html">Live Demo</a>
 
-- name: visualizer-micro
-  link: http://example.com
-  blurb: So lorem ipsum for the example to useasdfffffffffffffffffffffffffffffffffff nsdf s fsf sdfsdfdfs fsdf sf So lorem ipsum for the example to useasdfffffffffffffffffffffffffffffffffff nsdf s fsf sdfsdfdfs fsdf sf
+- name: Daisywheel.js
+  link: http://daisywheeljs.org
+  blurb: The <a target="_blank" href="http://store.steampowered.com/bigpicture/">Steam "Big Picture"</a> Daisywheel ported to HTML5. Supports the Gamepad API.
+
+- name: CSS Visualizers
+  link: https://github.com/likethemammal/css-visualizer
+  blurb: Music visualizers made entirely from DOM elements and CSS3. No SVG, Canvas, or WebGL used. <a href="http://likethemammal.github.io/css-visualizer">Live Demo.</a>
+
+
+- name: osrc-widget
+  link: https://github.com/likethemammal/osrc-widget
+  blurb: A widget version of the graphs that get generated from the <a href="http://osrc.dfm.io/Likethemammal">Open Source Report Card</a> site.
+
+- name: Leap-Boilerplate
+  link: https://github.com/likethemammal/Leap-Boilerplate
+  blurb: Basic boilerplate for the <a target="_blank" href="https://github.com/leapmotion/leapjs">leap.js</a> library that visualizes when leap gestures fire.
+
+- name: SavePoint
+  link: https://github.com/likethemammal/SavePoint
+  blurb: Chrome extension that saves the page's scroll and snaps it back when desired.
 

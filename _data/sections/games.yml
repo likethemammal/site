@@ -1,0 +1,16 @@
+- name: Casper
+  link: http://likethemammal.github.io/Casper/
+  blurb: First-person flashlight game. Made in a weekend for <a target="_blank" href="http://bacongamejam.org/jams/bacongamejam-10/">Bacon Game Jam 10</a>.
+
+- name: 10Secs
+  link: http://likethemammal.github.io/10Secs/
+  blurb: 10 Seconds to Survive. Created for <a target="_blank" href="http://www.ludumdare.com/">Ludum Dare 27</a>.
+
+- name: Shitty Rainbows
+  link: https://github.com/L1fescape/Shitty-Rainbows
+  blurb: Badass game for <a target="_blank" href="http://bacongamejam.org/jams/bacongamejam-06/">Bacon Game Jam 6</a>.
+
+- name: Project Negative
+  link: http://likethemammal.github.io/ProjectNegative/
+  blurb: My first HTML5 game. No libraries used. Completely <a target="_blank" href="http://vanilla-js.com/">Vanilla JS.</a>
+

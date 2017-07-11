@@ -1,3 +1,8 @@
+- name: The Accessibility of Programming
+  link: http://likethemammal.github.io/techtalk/
+  blurb: Exploring why learning to program seems to be so scary and how easy it can be to learn. Given at <a href="http://www.gainesvillebarcamp.com">Gainesville Barcamp</a>, Nov 2014.
+
 - name: React, Flux, and a little Redux
-  link: http://example.com/
-  blurb: So lorem ipsum for the example to use some <a href="http://example.com">shit</a>
+  link: http://likethemammal.github.io/reacttalk/
+  blurb: A discussion about the current state of web app development, and the direction modern frameworks are heading. Given at the <a href="http://www.gnvjs.com">Gainesville JS</a> meetup, downtown in the Hackerspace, Aug 2015.
+

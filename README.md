@@ -24,6 +24,10 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //do semantic html everywhere
 //fix socials section (name contact, fix styles, fix formating of links)
 //use rems for things
+//move favicon
+//reorganize styles for floating bottom (center)
+//determain section order in constants file
+//dont link date in writings section
 
 
 //answer stackoverflow question with jsonify

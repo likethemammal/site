@@ -28,4 +28,4 @@ export const socials = {
 
 export const PROFILE_IMAGE_SRC = 'https://avatars1.githubusercontent.com/u/3430841'
 
-export const PROFILE_DESC = `This is the story of me being on a plane with no internet`
+export const PROFILE_DESC = `My name is Chris. I'm a developer, longboarder, chillwave-lover, and doer of things. I build games, lead dev teams, and I'm passionate about web tech.`
