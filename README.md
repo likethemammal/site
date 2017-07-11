@@ -18,9 +18,12 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //replace bg image
 //use new profile image
 //professional section
+//change app.js to index.js
 
 
 //answer stackoverflow question with jsonify
 //babelrc all other projects on Github
 //add readme to example
+//add raw-loader to other projects
+//add new _data dir structure to example
 

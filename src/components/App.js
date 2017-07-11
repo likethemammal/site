@@ -7,6 +7,8 @@ import _ from 'lodash'
 import FloatingCard from './FloatingCard'
 import BottomCard from './BottomCard'
 
+import css from './App.css'
+
 
 export default class App extends Component {
 
@@ -28,14 +30,23 @@ export default class App extends Component {
             blurb: <a href={link}>{link}</a>,
         })))
 
-        return <div>
-            {sections}
-            <Section
-                title="socials"
-                values={socialValues}
-            />
-            <BottomCard />
-            <FloatingCard />
+        return <div className={css.container}>
+
+            <header className={css.header}>
+                <h1 className={css.headerText}>
+                    {`Chris Dolphin`}
+                </h1>
+            </header>
+
+            <div className={css.inner}>
+                {sections}
+                <Section
+                    title="socials"
+                    values={socialValues}
+                />
+                <BottomCard />
+                <FloatingCard />
+            </div>
         </div>
     }
 }

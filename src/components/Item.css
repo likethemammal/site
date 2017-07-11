@@ -1,0 +1,28 @@
+.container {
+    composes: cf from '../general.css';
+    display: block;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.link {
+    display: block;
+    float: left;
+    width: 30%;
+    padding: 0;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blurb {
+    display: block;
+    float: left;
+    width: 70%;
+    padding: 0 5px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

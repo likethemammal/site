@@ -1,43 +1,30 @@
 import React, { Component } from 'react'
 
-import _ from 'lodash'
 import css from './Section.css'
+
+import Item from './Item'
 
 export default class Section extends Component {
     render() {
 
         const { values, title } = this.props
-        const items = values.map(({
-            name,
-            link,
-            blurb
-        }, i) => {
+        const items = values.map((item, i) => <Item
+            key={i}
+            {...item}
+        />)
 
-            const stringBlurb = !_.isObject(blurb)
-
-            const blurbEl = stringBlurb ? <span
-                className={css.blurb}
-                dangerouslySetInnerHTML={{__html: blurb}}
-            /> : <span className={css.blurb} >
-                {blurb}
-            </span>
-
-            return <div key={i}>
-                <a
-                    href={link}
-                    className={css.link}
-                >
-                    {name}
-                </a>
-                {blurbEl}
+        return <section
+            id={`#${title.toLowerCase()}`}
+            className={css.container}
+        >
+            <div className={css.heading}>
+                <div className={css.title}>
+                    {title.toUpperCase()}
+                </div>
             </div>
-        })
-
-        return <div className={css.container}>
-            <div className={css.title}>
-                {title.toUpperCase()}
-            </div>
-            {items}
-        </div>
+            <ul className={css.list}>
+                {items}
+            </ul>
+        </section>
     }
 }
