@@ -40,10 +40,17 @@ const config = {
                     'style-loader',
                     {
                         loader: 'css-loader',
-                        options: { modules: true },
+                        options: {
+                            modules: true,
+                            localIdentName: '[name].[local]'
+                        },
                     },
                 ],
             },
+            {
+                test: /\.(svg)$/,
+                use: ['raw-loader']
+            }
         ]
 
     },
