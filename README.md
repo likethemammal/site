@@ -27,25 +27,25 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //--fix writings section links
 //--fix socials section blurbs
 //responsive styles for social icons
-//figure out favicons
-//hook up google analytics
+//--figure out favicons
+//--hook up google analytics
 //rename card to bio everywhere
 //hook up vendor prefixes
-//handle importing font
-//minify bg and handle screen sizes
+//--handle importing font
+//--minify bg and handle screen sizes
 
 //professional section
 //change app.js to index.js
 //create items component and separate from section component
 //do semantic html everywhere
 //use rems for things
-//move favicon
-//get bg image
-//make font size bigger for most text
+//--move favicon
+//--get bg image
+//--make font size bigger for most text
 //use rems where I should
 //
 
-//answer stackoverflow question with jsonify
+//--answer stackoverflow question with jsonify
 //babelrc all other projects on Github
 //add readme to example
 //add raw-loader to other projects

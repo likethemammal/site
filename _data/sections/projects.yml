@@ -6,14 +6,13 @@
   link: http://likethemammal.github.io/visualizer-micro/example.html
   blurb: A JS micro library for just the getSpectrum and getWaveform methods from <a target="_blank" href="https://github.com/jsantell/dancer.js">Dancer.js</a> using Web Audio API. <a target="_blank" href="https://http://likethemammal.github.io/visualizer-micro/example.html">Live Demo</a>
 
-- name: Daisywheel.js
-  link: http://daisywheeljs.org
-  blurb: The <a target="_blank" href="http://store.steampowered.com/bigpicture/">Steam "Big Picture"</a> Daisywheel ported to HTML5. Supports the Gamepad API.
-
 - name: CSS Visualizers
   link: https://github.com/likethemammal/css-visualizer
   blurb: Music visualizers made entirely from DOM elements and CSS3. No SVG, Canvas, or WebGL used. <a href="http://likethemammal.github.io/css-visualizer">Live Demo.</a>
 
+- name: Daisywheel.js
+  link: http://daisywheeljs.org
+  blurb: The <a target="_blank" href="http://store.steampowered.com/bigpicture/">Steam "Big Picture"</a> Daisywheel ported to HTML5. Supports the Gamepad API.
 
 - name: osrc-widget
   link: https://github.com/likethemammal/osrc-widget
