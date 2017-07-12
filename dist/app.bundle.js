@@ -29049,7 +29049,7 @@ exports.i(__webpack_require__(38), undefined);
 exports.i(__webpack_require__(16), undefined);
 
 // module
-exports.push([module.i, ".BottomCard-container {\n}\n\n.BottomCard-inner {\n    margin: 15px auto 0 30%;\n}\n\n.BottomCard-content {\n    margin-right: 120px;\n}\n\n.BottomCard-icon {\n    width: 60px;\n}\n\n.BottomCard-blurb {\n    width: 70%;\n    max-width: 400px;\n    padding-left: 40px;\n    margin: 0;\n    float: left;\n}\n\n.BottomCard-avatarContainer {\n    float: left;\n    max-width: 100px;\n}", ""]);
+exports.push([module.i, ".BottomCard-container {\n}\n\n.BottomCard-inner {\n    margin: 15px auto 0 30%;\n}\n\n.BottomCard-content {\n    margin-right: 120px;\n}\n\n.BottomCard-icon {\n    width: 60px;\n}\n\n.BottomCard-blurb {\n    width: 70%;\n    max-width: 400px;\n    padding-left: 40px;\n    margin: 0;\n    float: left;\n}\n\n.BottomCard-avatarContainer {\n    float: left;\n    max-width: 100px;\n}\n\n@media only screen and (max-width: 800px) {\n    .BottomCard-blurb {\n        padding: 15px;\n        margin: 0 auto;\n        float: none;\n        max-width: none;\n        width: 100%;\n    }\n\n    .BottomCard-avatarContainer {\n        width: 100%;\n        max-width: 200px;\n        padding: 15px;\n        float: none;\n    }\n}\n\n@media only screen and (max-width: 420px) {\n\n    .BottomCard-avatarContainer {\n        max-width: 100%;\n    }\n\n    .BottomCard-content {\n        margin-right: 0;\n    }\n\n    .BottomCard-inner {\n        margin-left: 0;\n    }\n}\n\n", ""]);
 
 // exports
 exports.locals = {
@@ -29071,7 +29071,7 @@ exports.i(__webpack_require__(16), undefined);
 exports.i(__webpack_require__(37), undefined);
 
 // module
-exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 6px;\n    padding-left: 15px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 20px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 15px 15px 0;\n    min-width: 100px;\n    opacity: 0.85;\n    color: #333;\n\n}\n\n.FloatingCard-link:hover {\n    opacity: 1;\n    color: #00ABD6;\n}\n\n.FloatingCard-link:hover .FloatingCard-label {\n    opacity: 1;\n}\n\n.FloatingCard-iconContainer {\n    float: left;\n    width: 35px;\n    height: 35px;\n    padding: 0 8px;\n    background: blue;\n    border-radius: 50%;\n    margin-right: 7px;\n    line-height: 45px;\n}\n\n.FloatingCard-icon {\n    height: 100%;\n    /*line-height: 46px;*/\n\n}\n\n.FloatingCard-label {\n    float: left;\n    font-size: 13px;\n    font-family: \"Railway\", sans-serif;\n    text-transform: uppercase;\n    line-height: 31px;\n    opacity: 9;\n}", ""]);
+exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 6px;\n    padding-left: 15px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 20px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 15px 15px 0;\n    min-width: 100px;\n    opacity: 0.85;\n    color: #333;\n\n}\n\n.FloatingCard-link:hover {\n    opacity: 1;\n    color: #00ABD6;\n}\n\n.FloatingCard-link:hover .FloatingCard-label {\n    opacity: 1;\n}\n\n.FloatingCard-iconContainer {\n    float: left;\n    width: 35px;\n    height: 35px;\n    padding: 0 8px;\n    background: blue;\n    border-radius: 50%;\n    margin-right: 7px;\n    line-height: 45px;\n}\n\n.FloatingCard-icon {\n    height: 100%;\n    /*line-height: 46px;*/\n\n}\n\n.FloatingCard-label {\n    float: left;\n    font-size: 13px;\n    font-family: \"Railway\", sans-serif;\n    text-transform: uppercase;\n    line-height: 31px;\n    opacity: 9;\n}\n\n\n@media only screen and (max-width: 420px) {\n    .FloatingCard-container {\n        margin-right: 0;\n    }\n\n    .FloatingCard-blurb {\n        padding: 15px;\n        margin: 0 auto;\n        float: none;\n        max-width: none;\n        width: 100%;\n    }\n\n    .FloatingCard-avatar {\n        display: none;\n    }\n\n    .FloatingCard-content {\n        margin-left: 0;\n    }\n\n    .FloatingCard-inner {\n        margin-left: 0;\n    }\n\n\n}\n\n", ""]);
 
 // exports
 exports.locals = {
@@ -29083,7 +29083,8 @@ exports.locals = {
 	"link": "FloatingCard-link " + __webpack_require__(16).locals["cf"] + "",
 	"label": "FloatingCard-label",
 	"iconContainer": "FloatingCard-iconContainer",
-	"icon": "FloatingCard-icon"
+	"icon": "FloatingCard-icon",
+	"blurb": "FloatingCard-blurb"
 };
 
 /***/ }),
@@ -29095,7 +29096,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 exports.i(__webpack_require__(16), undefined);
 
 // module
-exports.push([module.i, ".Item-container {\n    display: block;\n    line-height: 24px;\n    margin-bottom: 8px;\n}\n\n.Item-link {\n    display: block;\n    float: left;\n    width: 30%;\n    padding: 0;\n    text-align: right;\n    font-style: italic;\n    font-weight: bold;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n.Item-blurb {\n    display: block;\n    float: left;\n    width: 70%;\n    padding: 0 5px 0 10px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n", ""]);
+exports.push([module.i, ".Item-container {\n    display: block;\n    line-height: 24px;\n    margin-bottom: 8px;\n}\n\n.Item-link {\n    display: block;\n    float: left;\n    width: 30%;\n    padding: 0;\n    text-align: right;\n    font-style: italic;\n    font-weight: bold;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n.Item-blurb {\n    display: block;\n    float: left;\n    width: 70%;\n    padding: 0 5px 0 10px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n@media only screen and (max-width: 350px) {\n    .Item-container {\n        margin-bottom: 16px;\n    }\n\n    .Item-link {\n        width: 100%;\n        text-align: left;\n    }\n\n    .Item-blurb {\n        width: 100%;\n        padding: 0;\n    }\n}", ""]);
 
 // exports
 exports.locals = {

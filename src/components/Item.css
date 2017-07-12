@@ -26,3 +26,18 @@
     text-overflow: ellipsis;
 }
 
+@media only screen and (max-width: 350px) {
+    .container {
+        margin-bottom: 16px;
+    }
+
+    .link {
+        width: 100%;
+        text-align: left;
+    }
+
+    .blurb {
+        width: 100%;
+        padding: 0;
+    }
+}

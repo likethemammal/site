@@ -71,3 +71,33 @@
     line-height: 31px;
     opacity: 9;
 }
+
+
+@media only screen and (max-width: 420px) {
+    .container {
+        margin-right: 0;
+    }
+
+    .blurb {
+        padding: 15px;
+        margin: 0 auto;
+        float: none;
+        max-width: none;
+        width: 100%;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .inner {
+        margin-left: 0;
+    }
+
+
+}
+

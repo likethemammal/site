@@ -27,3 +27,36 @@
     float: left;
     max-width: 100px;
 }
+
+@media only screen and (max-width: 800px) {
+    .blurb {
+        padding: 15px;
+        margin: 0 auto;
+        float: none;
+        max-width: none;
+        width: 100%;
+    }
+
+    .avatarContainer {
+        width: 100%;
+        max-width: 200px;
+        padding: 15px;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .avatarContainer {
+        max-width: 100%;
+    }
+
+    .content {
+        margin-right: 0;
+    }
+
+    .inner {
+        margin-left: 0;
+    }
+}
+

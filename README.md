@@ -20,17 +20,17 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //--determine section order in constants file
 //--fix socials section (name contact, fix styles, fix formating of links)
 //--reorganize styles for floating bottom (center)
-//handle responsive styles for the FloatingCard and bottom avatar lining up
+//--handle responsive styles for the FloatingCard and bottom avatar lining up
 //--dont link date in writings section
 //--add more padding to section bottoms
 //--add more padding to blurb about me
 //--fix writings section links
 //--fix socials section blurbs
-//responsive styles for social icons
+//--responsive styles for social icons
 //--figure out favicons
 //--hook up google analytics
 //rename card to bio everywhere
-//hook up vendor prefixes
+//--hook up vendor prefixes
 //--handle importing font
 //--minify bg and handle screen sizes
 
