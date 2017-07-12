@@ -3989,22 +3989,26 @@ var socials = exports.socials = {
     github: {
         label: 'Github',
         link: 'https://github.com/likethemammal',
-        icon: _github2.default
+        icon: _github2.default,
+        color: '#3A3939'
     },
     twitter: {
         label: 'Twitter',
         link: 'https://twitter.com/likethemammal',
-        icon: _twitter2.default
+        icon: _twitter2.default,
+        color: '#1DA1F2'
     },
     email: {
         label: 'Email',
         link: 'mailto:dolphin@likethemammal.com',
-        icon: _gmail2.default
+        icon: _gmail2.default,
+        color: '#D14836'
     },
     stackoverflow: {
         label: 'StackOverflow',
         link: 'https://stackoverflow.com/users/2687479/chris-dolphin?tab=answers',
-        icon: _stackoverflow2.default
+        icon: _stackoverflow2.default,
+        color: '#FE7A16'
     }
 };
 
@@ -27506,7 +27510,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BOTTOM_OFFSET = 220;
+var BOTTOM_OFFSET = 200;
 
 var App = function (_Component) {
     _inherits(App, _Component);
@@ -27796,12 +27800,14 @@ var FloatingCard = function (_Component) {
                     {
                         key: key,
                         href: link,
-                        className: _FloatingCard2.default.link,
-                        style: { background: color }
+                        className: _FloatingCard2.default.link
                     },
                     _react2.default.createElement(
                         'div',
-                        { className: _FloatingCard2.default.iconContainer },
+                        {
+                            className: _FloatingCard2.default.iconContainer,
+                            style: { background: color }
+                        },
                         _react2.default.createElement(
                             'i',
                             { className: _FloatingCard2.default.icon },
@@ -29032,7 +29038,7 @@ exports.i(__webpack_require__(16), undefined);
 exports.i(__webpack_require__(37), undefined);
 
 // module
-exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 5px;\n    padding-left: 15px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 15px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 5px 15px 0;\n    min-width: 100px;\n}\n\n.FloatingCard-iconContainer {\n    float: left;\n    width: 35px;\n    height: 35px;\n    padding: 0 8px;\n    background: blue;\n    border-radius: 50%;\n    margin-right: 7px;\n    line-height: 45px;\n}\n\n.FloatingCard-icon {\n    height: 100%;\n    /*line-height: 46px;*/\n\n}\n\n.FloatingCard-label {\n    float: left;\n    font-size: 13px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    text-transform: uppercase;\n    line-height: 23px;\n}", ""]);
+exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 6px;\n    padding-left: 15px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 20px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 15px 15px 0;\n    min-width: 100px;\n    opacity: 0.85;\n    color: #333;\n\n}\n\n.FloatingCard-link:hover {\n    opacity: 1;\n    color: #00ABD6;\n}\n\n.FloatingCard-link:hover .FloatingCard-label {\n    opacity: 1;\n}\n\n.FloatingCard-iconContainer {\n    float: left;\n    width: 35px;\n    height: 35px;\n    padding: 0 8px;\n    background: blue;\n    border-radius: 50%;\n    margin-right: 7px;\n    line-height: 45px;\n}\n\n.FloatingCard-icon {\n    height: 100%;\n    /*line-height: 46px;*/\n\n}\n\n.FloatingCard-label {\n    float: left;\n    font-size: 13px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    text-transform: uppercase;\n    line-height: 31px;\n    opacity: 9;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -29042,9 +29048,9 @@ exports.locals = {
 	"avatar": "FloatingCard-avatar " + __webpack_require__(37).locals["container"] + "",
 	"socials": "FloatingCard-socials",
 	"link": "FloatingCard-link " + __webpack_require__(16).locals["cf"] + "",
+	"label": "FloatingCard-label",
 	"iconContainer": "FloatingCard-iconContainer",
-	"icon": "FloatingCard-icon",
-	"label": "FloatingCard-label"
+	"icon": "FloatingCard-icon"
 };
 
 /***/ }),

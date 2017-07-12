@@ -7,22 +7,26 @@ export const socials = {
     github: {
         label: 'Github',
         link: 'https://github.com/likethemammal',
-        icon: SVG_GITHUB
+        icon: SVG_GITHUB,
+        color: '#3A3939',
     },
     twitter: {
         label: 'Twitter',
         link: 'https://twitter.com/likethemammal',
-        icon: SVG_TWITTER
+        icon: SVG_TWITTER,
+        color: '#1DA1F2',
     },
     email: {
         label: 'Email',
         link: 'mailto:dolphin@likethemammal.com',
-        icon: SVG_EMAIL
+        icon: SVG_EMAIL,
+        color: '#D14836',
     },
     stackoverflow: {
         label: 'StackOverflow',
         link: 'https://stackoverflow.com/users/2687479/chris-dolphin?tab=answers',
-        icon: SVG_STACKOVERFLOW
+        icon: SVG_STACKOVERFLOW,
+        color: '#FE7A16',
     }
 }
 

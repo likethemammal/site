@@ -10,14 +10,14 @@
 .inner {
     width: 305px;
     float: left;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-left: 15px;
 }
 
 .avatar {
     composes: container from './Avatar.css';
     float: left;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-bottom: 25px;
     height: 100px;
 
@@ -30,8 +30,20 @@
 .link {
     composes: cf from '../general.css';
     float: left;
-    margin: 0 5px 15px 0;
+    margin: 0 15px 15px 0;
     min-width: 100px;
+    opacity: 0.85;
+    color: #333;
+
+}
+
+.link:hover {
+    opacity: 1;
+    color: #00ABD6;
+}
+
+.link:hover .label {
+    opacity: 1;
 }
 
 .iconContainer {
@@ -56,5 +68,6 @@
     font-size: 13px;
     font-family: "Helvetica Neue", sans-serif;
     text-transform: uppercase;
-    line-height: 23px;
+    line-height: 31px;
+    opacity: 9;
 }

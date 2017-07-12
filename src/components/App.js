@@ -11,7 +11,7 @@ import css from './App.css'
 
 import { isNearBottom } from '../utils'
 
-const BOTTOM_OFFSET = 220
+const BOTTOM_OFFSET = 200
 
 
 export default class App extends Component {

@@ -16,9 +16,11 @@ export default class FloatingCard extends Component {
                 key={key}
                 href={link}
                 className={css.link}
-                style={{background: color}}
             >
-                <div className={css.iconContainer}>
+                <div
+                    className={css.iconContainer}
+                    style={{background: color}}
+                >
                     <i className={css.icon}>
                         <SVG raw={icon}/>
                     </i>
