@@ -11,7 +11,7 @@ import css from './App.css'
 
 import { isNearBottom } from '../utils'
 
-const BOTTOM_OFFSET = 200
+const BOTTOM_OFFSET = 160
 
 
 export default class App extends Component {
@@ -80,8 +80,14 @@ export default class App extends Component {
             </div>
 
             {mounted && <div className={!bottom ? css.gradient : css.hidden}>
-                <div className={css.floatingInner}>
-                    <FloatingCard />
+                <div className={css.fade} />
+
+                <div className={css.floatingWrapper}>
+                    <div className={css.floatingContent}>
+                        <div className={css.floatingInner}>
+                            <FloatingCard />
+                        </div>
+                    </div>
                 </div>
             </div>}
         </div>
