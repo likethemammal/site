@@ -27787,9 +27787,13 @@ var FloatingCard = function (_Component) {
                         className: _FloatingCard2.default.link
                     },
                     _react2.default.createElement(
-                        'i',
-                        { className: _FloatingCard2.default.icon },
-                        _react2.default.createElement(_SVG2.default, { raw: icon })
+                        'div',
+                        { className: _FloatingCard2.default.iconContainer },
+                        _react2.default.createElement(
+                            'i',
+                            { className: _FloatingCard2.default.icon },
+                            _react2.default.createElement(_SVG2.default, { raw: icon })
+                        )
                     ),
                     _react2.default.createElement(
                         'span',
@@ -27956,9 +27960,9 @@ var SVG = function (_Component) {
                 className = _props.className;
 
 
-            return _react2.default.createElement('img', {
+            return _react2.default.createElement('div', {
                 className: className,
-                src: '' + SVG_PREFIX + raw
+                dangerouslySetInnerHTML: { __html: raw }
             });
         }
     }]);
@@ -29013,7 +29017,7 @@ exports.i(__webpack_require__(16), undefined);
 exports.i(__webpack_require__(37), undefined);
 
 // module
-exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 10px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 15px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 5px 15px 0;\n    min-width: 100px;\n}\n\n.FloatingCard-icon {\n    float: left;\n    width: 30px;\n    margin-right: 7px;\n    height: 25px;\n    line-height: 46px;\n}\n\n.FloatingCard-label {\n    line-height: 3px;\n    float: left;\n    font-size: 13px;\n}", ""]);
+exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 5px;\n    padding-left: 15px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 15px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 5px 15px 0;\n    min-width: 100px;\n}\n\n.FloatingCard-iconContainer {\n    float: left;\n    width: 35px;\n    height: 35px;\n    padding: 0 8px;\n    background: blue;\n    border-radius: 50%;\n    margin-right: 7px;\n    line-height: 45px;\n}\n\n.FloatingCard-icon {\n    height: 100%;\n    /*line-height: 46px;*/\n\n}\n\n.FloatingCard-label {\n    float: left;\n    font-size: 13px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    text-transform: uppercase;\n    line-height: 23px;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -29023,6 +29027,7 @@ exports.locals = {
 	"avatar": "FloatingCard-avatar " + __webpack_require__(37).locals["container"] + "",
 	"socials": "FloatingCard-socials",
 	"link": "FloatingCard-link " + __webpack_require__(16).locals["cf"] + "",
+	"iconContainer": "FloatingCard-iconContainer",
 	"icon": "FloatingCard-icon",
 	"label": "FloatingCard-label"
 };
@@ -29054,7 +29059,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, ".SVG-image {\n    max-width: 100%;\n    max-height: 100%;\n}", ""]);
+exports.push([module.i, ".SVG-image {\n    max-width: 100%;\n    max-height: 100%;\n}\n\n.SVG-image svg {\n    fill: white;\n}", ""]);
 
 // exports
 exports.locals = {

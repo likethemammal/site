@@ -14,9 +14,9 @@ export default class SVG extends Component {
 
         const { raw, className } = this.props
 
-        return <img
+        return <div
             className={className}
-            src={`${SVG_PREFIX}${raw}`}
+            dangerouslySetInnerHTML={{__html: raw}}
         />
     }
 }
