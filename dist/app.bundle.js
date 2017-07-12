@@ -27506,33 +27506,40 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BOTTOM_OFFSET = 100;
+var BOTTOM_OFFSET = 220;
 
 var App = function (_Component) {
     _inherits(App, _Component);
 
     function App() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, App);
 
-        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
 
-        _this.onScroll = function () {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            bottom: void 0
+        }, _this.onScroll = function () {
 
             _this.setState({
                 bottom: (0, _utils.isNearBottom)(BOTTOM_OFFSET)
             });
-        };
-
-        _this.state = {
-            bottom: (0, _utils.isNearBottom)(BOTTOM_OFFSET)
-        };
-        return _this;
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(App, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
             window.addEventListener('scroll', this.onScroll);
+
+            this.setState({
+                bottom: (0, _utils.isNearBottom)(BOTTOM_OFFSET)
+            });
         }
     }, {
         key: 'componentWillUnmount',
@@ -27542,8 +27549,10 @@ var App = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            var bottom = this.state.bottom;
 
             var data = window._jekyll_data;
+            var mounted = bottom !== void 0;
 
             var sections = Object.keys(data).map(function (key, i) {
                 return _react2.default.createElement(_Section2.default, {
@@ -27553,10 +27562,12 @@ var App = function (_Component) {
                 });
             });
 
-            var socialValues = _lodash2.default.map(_assets.socials, function (_ref) {
-                var label = _ref.label,
-                    link = _ref.link,
-                    icon = _ref.icon;
+            console.log(mounted);
+
+            var socialValues = _lodash2.default.map(_assets.socials, function (_ref2) {
+                var label = _ref2.label,
+                    link = _ref2.link,
+                    icon = _ref2.icon;
                 return {
                     link: link,
                     name: label,
@@ -27590,9 +27601,9 @@ var App = function (_Component) {
                     }),
                     _react2.default.createElement(_BottomCard2.default, null)
                 ),
-                _react2.default.createElement(
+                mounted && _react2.default.createElement(
                     'div',
-                    { className: !this.state.bottom ? _App2.default.gradient : _App2.default.hidden },
+                    { className: !bottom ? _App2.default.gradient : _App2.default.hidden },
                     _react2.default.createElement(
                         'div',
                         { className: _App2.default.floatingInner },
@@ -27777,14 +27788,16 @@ var FloatingCard = function (_Component) {
             var els = _lodash2.default.map(_assets.socials, function (_ref, key) {
                 var icon = _ref.icon,
                     label = _ref.label,
-                    link = _ref.link;
+                    link = _ref.link,
+                    color = _ref.color;
 
                 return _react2.default.createElement(
                     'a',
                     {
                         key: key,
                         href: link,
-                        className: _FloatingCard2.default.link
+                        className: _FloatingCard2.default.link,
+                        style: { background: color }
                     },
                     _react2.default.createElement(
                         'div',
@@ -28078,6 +28091,8 @@ var isNearBottom = exports.isNearBottom = function isNearBottom(offset) {
 
     var windowScroll = window.innerHeight;
     var scroll = window.scrollY;
+
+    console.log(documentHeight, windowScroll, scroll);
 
     var isNearBottom = documentHeight - windowScroll - scroll < offset;
 
@@ -28973,7 +28988,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, ".App-container {\n}\n\n.App-inner {\n    padding: 15px;\n    margin-bottom: 125px;\n}\n\n.App-floatingInner {\n    margin: 0 auto;\n    max-width: 850px;\n}\n\n.App-header {\n    width: 100%;\n    max-width: 850px;\n    margin: 0 auto;\n}\n\n.App-headerText {\n    width: 100px;\n    margin: 15px auto 0 30%;\n    padding: 0 0 0 10px;\n    text-transform: uppercase;\n    font-size: 20px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-weight: normal;\n    color: #fff;\n}\n\n.App-gradient {\n    background: white;\n    padding-top: 25px;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    visibility: visible;\n    opacity: 1;\n    -webkit-transition: opacity 600ms, visibility 600ms;\n    transition: opacity 600ms, visibility 600ms;\n}\n\n.App-hidden {\n    opacity: 0;\n    visibility: hidden;\n}", ""]);
+exports.push([module.i, ".App-container {\n}\n\n.App-inner {\n    padding: 15px;\n    margin-bottom: 125px;\n}\n\n.App-floatingInner {\n    margin: 0 auto;\n    max-width: 850px;\n}\n\n.App-header {\n    width: 100%;\n    max-width: 850px;\n    margin: 0 auto;\n}\n\n.App-headerText {\n    width: 100px;\n    margin: 15px auto 0 30%;\n    padding: 0 0 0 10px;\n    text-transform: uppercase;\n    font-size: 20px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-weight: normal;\n    color: #fff;\n}\n\n.App-gradient {\n    background: white;\n    padding-top: 25px;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    visibility: visible;\n    opacity: 1;\n    transition: opacity 400ms, visibility 400ms;\n}\n\n.App-hidden {\n    opacity: 0;\n    visibility: hidden;\n}", ""]);
 
 // exports
 exports.locals = {

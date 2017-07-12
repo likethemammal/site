@@ -11,17 +11,12 @@ import css from './App.css'
 
 import { isNearBottom } from '../utils'
 
-const BOTTOM_OFFSET = 100
+const BOTTOM_OFFSET = 220
 
 
 export default class App extends Component {
-
-    constructor() {
-        super()
-
-        this.state = {
-            bottom: isNearBottom(BOTTOM_OFFSET)
-        }
+    state = {
+        bottom: void(0),
     }
 
     onScroll = () => {
@@ -34,6 +29,10 @@ export default class App extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.onScroll)
+
+        this.setState({
+            bottom: isNearBottom(BOTTOM_OFFSET)
+        })
     }
 
     componentWillUnmount() {
@@ -42,7 +41,9 @@ export default class App extends Component {
 
     render() {
 
+        const { bottom } = this.state
         const data = window._jekyll_data
+        const mounted = bottom !== void(0)
 
         const sections = Object.keys(data).map((key, i) => <Section
             {...{
@@ -51,6 +52,8 @@ export default class App extends Component {
                 values: data[key]
             }}
         />)
+
+        console.log(mounted)
 
         const socialValues = _.map(socials, (({label, link, icon}) => ({
             link,
@@ -76,11 +79,11 @@ export default class App extends Component {
 
             </div>
 
-            <div className={!this.state.bottom ? css.gradient : css.hidden}>
+            {mounted && <div className={!bottom ? css.gradient : css.hidden}>
                 <div className={css.floatingInner}>
                     <FloatingCard />
                 </div>
-            </div>
+            </div>}
         </div>
     }
 }

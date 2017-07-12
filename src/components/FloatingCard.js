@@ -11,11 +11,12 @@ import SVG from './SVG'
 export default class FloatingCard extends Component {
     render() {
 
-        const els = _.map(socials, (({ icon, label, link }, key) => {
+        const els = _.map(socials, (({ icon, label, link, color }, key) => {
             return <a
                 key={key}
                 href={link}
                 className={css.link}
+                style={{background: color}}
             >
                 <div className={css.iconContainer}>
                     <i className={css.icon}>

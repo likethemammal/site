@@ -10,6 +10,12 @@ export const isNearBottom = (offset) => {
     const windowScroll = window.innerHeight
     const scroll = window.scrollY
 
+    console.log(
+        documentHeight,
+        windowScroll,
+        scroll,
+    )
+
     const isNearBottom = documentHeight - windowScroll - scroll < offset
 
     return isNearBottom
