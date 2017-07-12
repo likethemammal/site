@@ -27510,7 +27510,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BOTTOM_OFFSET = 160;
+var BOTTOM_OFFSET = 170;
 
 var App = function (_Component) {
     _inherits(App, _Component);
@@ -27586,6 +27586,7 @@ var App = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { ref: 'view', className: _App2.default.container },
+                _react2.default.createElement('div', { className: _App2.default.bg }),
                 _react2.default.createElement(
                     'header',
                     { className: _App2.default.header },
@@ -29003,7 +29004,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, ".App-container {\n}\n\n.App-inner {\n    padding: 15px;\n    margin-bottom: 125px;\n}\n\n.App-floatingInner {\n    margin: 0 auto;\n    max-width: 850px;\n}\n\n.App-floatingContent {\n    background: linear-gradient(to bottom, rgba(255,255,255, 1) 50%,rgba(255,255,255,0.5) 100%);\n    padding-top: 20px;\n}\n\n.App-floatingWrapper {\n    background: rgba(255,255,255,0.5);\n}\n\n\n.App-header {\n    width: 100%;\n    max-width: 850px;\n    margin: 0 auto;\n}\n\n.App-headerText {\n    width: 100px;\n    margin: 15px auto 0 30%;\n    padding: 0 0 0 10px;\n    text-transform: uppercase;\n    font-size: 20px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-weight: normal;\n    color: #fff;\n}\n\n.App-gradient {\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    visibility: visible;\n    opacity: 1;\n    transition: opacity 400ms, visibility 400ms;\n}\n\n.App-fade {\n    height: 3px;\n    background: rgba(255,255,255,0.6);\n}\n\n.App-hidden {\n    opacity: 0;\n    visibility: hidden;\n}", ""]);
+exports.push([module.i, ".App-container {\n}\n\n.App-inner {\n    padding: 15px;\n    margin-bottom: 125px;\n}\n\n.App-floatingInner {\n    margin: 0 auto;\n    max-width: 850px;\n}\n\n.App-floatingContent {\n    background: linear-gradient(to bottom, rgba(255,255,255, 1) 50%,rgba(255,255,255,0.5) 100%);\n    padding-top: 25px;\n}\n\n.App-floatingWrapper {\n    background: rgba(255,255,255,0.5);\n}\n\n\n.App-header {\n    width: 100%;\n    max-width: 850px;\n    margin: 0 auto;\n}\n\n.App-headerText {\n    width: 100px;\n    margin: 15px auto 0 30%;\n    padding: 0 0 0 10px;\n    text-transform: uppercase;\n    font-size: 20px;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-weight: normal;\n    color: #fff;\n}\n\n.App-gradient {\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    margin: 0 auto;\n    max-width: 850px;\n    visibility: visible;\n    opacity: 1;\n    transition: opacity 400ms, visibility 400ms;\n}\n\n.App-fade {\n    height: 1px;\n    background: rgba(0,0,0,0.1);\n}\n\n.App-hidden {\n    opacity: 0;\n    visibility: hidden;\n}\n\n.App-bg {\n    position: fixed;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    background: top center no-repeat #46554b;\n    -webkit-background-size: cover;\n    -moz-background-size: cover;\n    background-size: cover;\n}\n\n.App-bg:before {\n    content: ' ';\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    left: 0;\n    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);\n    opacity: 0.05;\n}\n\n@media only screen and (min-width: 1000px) {\n    .App-bg {\n        background-image: url('/dist/images/1.jpg');\n\n    }\n}\n\n@media only screen and (max-width: 1000px) {\n    .App-bg {\n        background-image: url('/dist/images/1.jpg');\n    }\n}", ""]);
 
 // exports
 exports.locals = {
@@ -29016,7 +29017,8 @@ exports.locals = {
 	"headerText": "App-headerText",
 	"gradient": "App-gradient",
 	"fade": "App-fade",
-	"hidden": "App-hidden App-gradient"
+	"hidden": "App-hidden App-gradient",
+	"bg": "App-bg"
 };
 
 /***/ }),

@@ -63,6 +63,8 @@ export default class App extends Component {
 
         return <div ref="view" className={css.container}>
 
+            <div className={css.bg} />
+
             <header className={css.header}>
                 <h1 className={css.headerText}>
                     {`Chris Dolphin`}
