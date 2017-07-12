@@ -13,12 +13,14 @@ export default class BottomCard extends Component {
             id="bio"
             className={css.container}
         >
-            <div className={css.inner}>
-                <div className={css.avatarContainer}>
-                    <Avatar/>
-                </div>
-                <div className={css.blurb}>
-                    {PROFILE_DESC}
+            <div className={css.content}>
+                <div className={css.inner}>
+                    <div className={css.avatarContainer}>
+                        <Avatar/>
+                    </div>
+                    <div className={css.blurb}>
+                        {PROFILE_DESC}
+                    </div>
                 </div>
             </div>
         </section>

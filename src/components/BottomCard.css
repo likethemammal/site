@@ -4,9 +4,11 @@
 
 .inner {
     composes: cf from '../general.css';
-    width: 100%;
-    max-width: 400px;
-    margin: 15px auto;
+    margin: 15px auto 0 30%;
+}
+
+.content {
+    margin-right: 120px;
 }
 
 .icon {
@@ -16,13 +18,12 @@
 .blurb {
     width: 70%;
     max-width: 400px;
-    padding-left: 10px;
+    padding-left: 40px;
     margin: 0;
     float: left;
 }
 
 .avatarContainer {
-    width: 30%;
     float: left;
     max-width: 100px;
 }

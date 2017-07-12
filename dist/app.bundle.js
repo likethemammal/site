@@ -2112,7 +2112,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, "\nbody {\n    color: #333;\n    margin: 45px 0;\n    background: #a2ab91;\n    font-family: \"abril-text\", serif;\n    font-size: 14px;\n    font-weight: 300;\n    line-height: 24px;\n}\n\na {\n    text-decoration: none;\n}\n\na {\n    color: #0062ad;\n}\n\na:hover {\n    color: #00ABD6;\n}\n\n.general-cf:before,\n.general-cf:after {\n    content: \" \"; /* 1 */\n    display: table; /* 2 */\n}\n\n.general-cf:after {\n    clear: both;\n}\n\n* {\n    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */\n    -moz-box-sizing: border-box;    /* Firefox, other Gecko */\n    box-sizing: border-box;         /* Opera/IE 8+ */\n}\n", ""]);
+exports.push([module.i, "\nbody {\n    color: #333;\n    margin: 45px 0;\n    background: #a2ab91;\n    font-family: \"abril-text\", serif;\n    font-size: 16px;\n    font-weight: 300;\n    line-height: 24px;\n}\n\na {\n    text-decoration: none;\n}\n\na {\n    color: #0062ad;\n}\n\na:hover {\n    color: #00ABD6;\n}\n\n.general-cf:before,\n.general-cf:after {\n    content: \" \"; /* 1 */\n    display: table; /* 2 */\n}\n\n.general-cf:after {\n    clear: both;\n}\n\n* {\n    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */\n    -moz-box-sizing: border-box;    /* Firefox, other Gecko */\n    box-sizing: border-box;         /* Opera/IE 8+ */\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -27725,16 +27725,20 @@ var BottomCard = function (_Component) {
                 },
                 _react2.default.createElement(
                     'div',
-                    { className: _BottomCard2.default.inner },
+                    { className: _BottomCard2.default.content },
                     _react2.default.createElement(
                         'div',
-                        { className: _BottomCard2.default.avatarContainer },
-                        _react2.default.createElement(_Avatar2.default, null)
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: _BottomCard2.default.blurb },
-                        _assets.PROFILE_DESC
+                        { className: _BottomCard2.default.inner },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _BottomCard2.default.avatarContainer },
+                            _react2.default.createElement(_Avatar2.default, null)
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _BottomCard2.default.blurb },
+                            _assets.PROFILE_DESC
+                        )
                     )
                 )
             );
@@ -29045,12 +29049,13 @@ exports.i(__webpack_require__(38), undefined);
 exports.i(__webpack_require__(16), undefined);
 
 // module
-exports.push([module.i, ".BottomCard-container {\n}\n\n.BottomCard-inner {\n    width: 100%;\n    max-width: 400px;\n    margin: 15px auto;\n}\n\n.BottomCard-icon {\n    width: 60px;\n}\n\n.BottomCard-blurb {\n    width: 70%;\n    max-width: 400px;\n    padding-left: 10px;\n    margin: 0;\n    float: left;\n}\n\n.BottomCard-avatarContainer {\n    width: 30%;\n    float: left;\n    max-width: 100px;\n}", ""]);
+exports.push([module.i, ".BottomCard-container {\n}\n\n.BottomCard-inner {\n    margin: 15px auto 0 30%;\n}\n\n.BottomCard-content {\n    margin-right: 120px;\n}\n\n.BottomCard-icon {\n    width: 60px;\n}\n\n.BottomCard-blurb {\n    width: 70%;\n    max-width: 400px;\n    padding-left: 40px;\n    margin: 0;\n    float: left;\n}\n\n.BottomCard-avatarContainer {\n    float: left;\n    max-width: 100px;\n}", ""]);
 
 // exports
 exports.locals = {
 	"container": "BottomCard-container " + __webpack_require__(38).locals["container"] + "",
 	"inner": "BottomCard-inner " + __webpack_require__(16).locals["cf"] + "",
+	"content": "BottomCard-content",
 	"icon": "BottomCard-icon",
 	"blurb": "BottomCard-blurb",
 	"avatarContainer": "BottomCard-avatarContainer"
