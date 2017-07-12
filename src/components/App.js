@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Section from './Section.js'
 
-import { socials } from './assets'
+import { socials, section_order } from './assets'
 import _ from 'lodash'
 
 import FloatingCard from './FloatingCard'
@@ -45,7 +45,7 @@ export default class App extends Component {
         const data = window._jekyll_data
         const mounted = bottom !== void(0)
 
-        const sections = Object.keys(data).map((key, i) => <Section
+        const sections = section_order.map((key, i) => <Section
             {...{
                 key: key,
                 title: key,
@@ -55,10 +55,10 @@ export default class App extends Component {
 
         console.log(mounted)
 
-        const socialValues = _.map(socials, (({label, link, icon}) => ({
+        const socialValues = _.map(socials, (({label, link, icon, blurb}) => ({
             link,
             name: label,
-            blurb: <a href={link}>{link}</a>,
+            blurb,
         })))
 
         return <div ref="view" className={css.container}>

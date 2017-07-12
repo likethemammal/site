@@ -9,26 +9,37 @@ export const socials = {
         link: 'https://github.com/likethemammal',
         icon: SVG_GITHUB,
         color: '#3A3939',
+        blurb: 'github.com/likethemammal'
     },
     twitter: {
         label: 'Twitter',
         link: 'https://twitter.com/likethemammal',
         icon: SVG_TWITTER,
         color: '#1DA1F2',
+        blurb: 'twitter.com/likethemammal'
     },
     email: {
         label: 'Email',
         link: 'mailto:dolphin@likethemammal.com',
         icon: SVG_EMAIL,
         color: '#D14836',
+        blurb: 'dolphin @ likethemammal.com'
     },
     stackoverflow: {
         label: 'StackOverflow',
         link: 'https://stackoverflow.com/users/2687479/chris-dolphin?tab=answers',
         icon: SVG_STACKOVERFLOW,
         color: '#FE7A16',
+        blurb: 'stackoverflow.com answers'
     }
 }
+
+export const section_order = [
+    'projects',
+    'games',
+    'writings',
+    'talks',
+]
 
 export const PROFILE_IMAGE_SRC = 'https://avatars1.githubusercontent.com/u/3430841'
 

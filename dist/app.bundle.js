@@ -3965,7 +3965,7 @@ module.exports = SyntheticUIEvent;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.PROFILE_DESC = exports.PROFILE_IMAGE_SRC = exports.socials = undefined;
+exports.PROFILE_DESC = exports.PROFILE_IMAGE_SRC = exports.section_order = exports.socials = undefined;
 
 var _stackoverflow = __webpack_require__(123);
 
@@ -3990,27 +3990,33 @@ var socials = exports.socials = {
         label: 'Github',
         link: 'https://github.com/likethemammal',
         icon: _github2.default,
-        color: '#3A3939'
+        color: '#3A3939',
+        blurb: 'github.com/likethemammal'
     },
     twitter: {
         label: 'Twitter',
         link: 'https://twitter.com/likethemammal',
         icon: _twitter2.default,
-        color: '#1DA1F2'
+        color: '#1DA1F2',
+        blurb: 'twitter.com/likethemammal'
     },
     email: {
         label: 'Email',
         link: 'mailto:dolphin@likethemammal.com',
         icon: _gmail2.default,
-        color: '#D14836'
+        color: '#D14836',
+        blurb: 'dolphin @ likethemammal.com'
     },
     stackoverflow: {
         label: 'StackOverflow',
         link: 'https://stackoverflow.com/users/2687479/chris-dolphin?tab=answers',
         icon: _stackoverflow2.default,
-        color: '#FE7A16'
+        color: '#FE7A16',
+        blurb: 'stackoverflow.com answers'
     }
 };
+
+var section_order = exports.section_order = ['projects', 'games', 'writings', 'talks'];
 
 var PROFILE_IMAGE_SRC = exports.PROFILE_IMAGE_SRC = 'https://avatars1.githubusercontent.com/u/3430841';
 
@@ -5228,7 +5234,7 @@ exports = module.exports = __webpack_require__(14)(undefined);
 
 
 // module
-exports.push([module.i, ".Section-container {\n    background: rgba(255,255,255,0.8);\n    max-width: 850px;\n    width: 100%;\n    padding: 15px 15px;\n    margin: 0 auto 15px auto;\n    border-radius: 2px;\n}\n\n.Section-container:last-child {\n    margin-bottom: 0;\n}\n\n.Section-heading {\n    margin-left: 30%;\n    padding-left: 10px;\n}\n\n.Section-title {\n    margin: 15px 0 5px;\n    padding: 0;\n    color: #9d9d85;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-size: 14px;\n    font-weight: normal;\n    text-transform: uppercase;\n}\n\n.Section-list {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}", ""]);
+exports.push([module.i, ".Section-container {\n    background: rgba(255,255,255,0.9);\n    max-width: 850px;\n    width: 100%;\n    padding: 15px 15px 25px 15px;\n    margin: 0 auto 25px auto;\n    border-radius: 2px;\n}\n\n.Section-container:last-child {\n    margin-bottom: 0;\n}\n\n.Section-heading {\n    margin-left: 30%;\n    padding-left: 10px;\n}\n\n.Section-title {\n    margin: 15px 0 5px;\n    padding: 0;\n    color: #9d9d85;\n    font-family: \"Helvetica Neue\", sans-serif;\n    font-size: 14px;\n    font-weight: normal;\n    text-transform: uppercase;\n}\n\n.Section-list {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -27558,7 +27564,7 @@ var App = function (_Component) {
             var data = window._jekyll_data;
             var mounted = bottom !== void 0;
 
-            var sections = Object.keys(data).map(function (key, i) {
+            var sections = _assets.section_order.map(function (key, i) {
                 return _react2.default.createElement(_Section2.default, {
                     key: key,
                     title: key,
@@ -27571,15 +27577,12 @@ var App = function (_Component) {
             var socialValues = _lodash2.default.map(_assets.socials, function (_ref2) {
                 var label = _ref2.label,
                     link = _ref2.link,
-                    icon = _ref2.icon;
+                    icon = _ref2.icon,
+                    blurb = _ref2.blurb;
                 return {
                     link: link,
                     name: label,
-                    blurb: _react2.default.createElement(
-                        'a',
-                        { href: link },
-                        link
-                    )
+                    blurb: blurb
                 };
             });
 
@@ -27910,6 +27913,7 @@ var Item = function (_Component) {
 
 
             var stringBlurb = !_lodash2.default.isObject(blurb);
+            var noHref = !link;
 
             var blurbEl = stringBlurb ? _react2.default.createElement('span', {
                 className: _Item2.default.blurb,
@@ -27920,17 +27924,27 @@ var Item = function (_Component) {
                 blurb
             );
 
+            var nameAndLinkEl = _react2.default.createElement(
+                'a',
+                {
+                    href: link,
+                    className: _Item2.default.link
+                },
+                name
+            );
+
+            var nameEl = _react2.default.createElement(
+                'span',
+                {
+                    className: _Item2.default.link
+                },
+                name
+            );
+
             return _react2.default.createElement(
                 'li',
                 { className: _Item2.default.container },
-                _react2.default.createElement(
-                    'a',
-                    {
-                        href: link,
-                        className: _Item2.default.link
-                    },
-                    name
-                ),
+                noHref ? nameEl : nameAndLinkEl,
                 blurbEl
             );
         }

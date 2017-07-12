@@ -8,6 +8,7 @@ export default class Item extends Component {
         const { blurb, link, name } = this.props
 
         const stringBlurb = !_.isObject(blurb)
+        const noHref = !link
 
         const blurbEl = stringBlurb ? <span
             className={css.blurb}
@@ -16,13 +17,21 @@ export default class Item extends Component {
             {blurb}
         </span>
 
+        const nameAndLinkEl = <a
+            href={link}
+            className={css.link}
+        >
+            {name}
+        </a>
+
+        const nameEl = <span
+            className={css.link}
+        >
+            {name}
+        </span>
+
         return <li className={css.container}>
-            <a
-                href={link}
-                className={css.link}
-            >
-                {name}
-            </a>
+            {noHref ?  nameEl : nameAndLinkEl}
             {blurbEl}
         </li>
     }
