@@ -28,7 +28,19 @@ https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-
 //reorganize styles for floating bottom (center)
 //determain section order in constants file
 //dont link date in writings section
-
+//add more padding to section bottoms
+//add more padding to blurb about me
+//handle responsive styles for the FloatingCard and bottom avatar lining up
+//responsive styles for social icons
+//fix writings section links
+//fix socials section blurbs
+//get bg image
+//make font size bigger for most text
+//use rems where I should
+//hook up vendor prefixes
+//hook up google analytics
+//figure out favicons
+//
 
 //answer stackoverflow question with jsonify
 //babelrc all other projects on Github

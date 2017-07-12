@@ -13,7 +13,7 @@
 
 .floatingContent {
     background: linear-gradient(to bottom, rgba(255,255,255, 1) 50%,rgba(255,255,255,0.5) 100%);
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .floatingWrapper {
