@@ -27572,8 +27572,6 @@ var App = function (_Component) {
                 });
             });
 
-            console.log(mounted);
-
             var socialValues = _lodash2.default.map(_assets.socials, function (_ref2) {
                 var label = _ref2.label,
                     link = _ref2.link,
@@ -28125,8 +28123,6 @@ var isNearBottom = exports.isNearBottom = function isNearBottom(offset) {
 
     var windowScroll = window.innerHeight;
     var scroll = window.scrollY;
-
-    console.log(documentHeight, windowScroll, scroll);
 
     var isNearBottom = documentHeight - windowScroll - scroll < offset;
 

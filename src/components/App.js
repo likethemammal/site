@@ -53,8 +53,6 @@ export default class App extends Component {
             }}
         />)
 
-        console.log(mounted)
-
         const socialValues = _.map(socials, (({label, link, icon, blurb}) => ({
             link,
             name: label,
