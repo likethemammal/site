@@ -551,7 +551,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 var ReactDOMComponentFlags = __webpack_require__(66);
 
 var invariant = __webpack_require__(1);
@@ -1808,6 +1808,22 @@ module.exports = __webpack_require__(22);
 
 /***/ }),
 /* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(15)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\nbody {\n    color: #333;\n    margin: 45px 0;\n    background: #74acdc;\n    font-family: \"abril-text\", serif;\n    font-size: 16px;\n    font-weight: 300;\n    line-height: 24px;\n}\n\na {\n    text-decoration: none;\n}\n\na {\n    color: #0062ad;\n}\n\na:hover {\n    color: #00ABD6;\n}\n\n.general-cf:before,\n.general-cf:after {\n    content: \" \"; /* 1 */\n    display: table; /* 2 */\n}\n\n.general-cf:after {\n    clear: both;\n}\n\n* {\n    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */\n    -moz-box-sizing: border-box;    /* Firefox, other Gecko */\n    box-sizing: border-box;         /* Opera/IE 8+ */\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"cf": "general-cf"
+};
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports) {
 
 /*
@@ -1889,7 +1905,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2102,22 +2118,6 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(14)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\nbody {\n    color: #333;\n    margin: 45px 0;\n    background: #a2ab91;\n    font-family: \"abril-text\", serif;\n    font-size: 16px;\n    font-weight: 300;\n    line-height: 24px;\n}\n\na {\n    text-decoration: none;\n}\n\na {\n    color: #0062ad;\n}\n\na:hover {\n    color: #00ABD6;\n}\n\n.general-cf:before,\n.general-cf:after {\n    content: \" \"; /* 1 */\n    display: table; /* 2 */\n}\n\n.general-cf:after {\n    clear: both;\n}\n\n* {\n    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */\n    -moz-box-sizing: border-box;    /* Firefox, other Gecko */\n    box-sizing: border-box;         /* Opera/IE 8+ */\n}\n", ""]);
-
-// exports
-exports.locals = {
-	"cf": "general-cf"
-};
 
 /***/ }),
 /* 17 */
@@ -5213,7 +5213,7 @@ module.exports = canDefineProperty;
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
@@ -5229,7 +5229,7 @@ exports.locals = {
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
@@ -24795,7 +24795,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
 
@@ -25532,7 +25532,7 @@ module.exports = ReactInputSelection;
 var _prodInvariant = __webpack_require__(3);
 
 var DOMLazyTree = __webpack_require__(20);
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 var React = __webpack_require__(22);
 var ReactBrowserEventEmitter = __webpack_require__(31);
 var ReactCurrentOwner = __webpack_require__(11);
@@ -29017,7 +29017,7 @@ module.exports = factory;
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
@@ -29043,10 +29043,10 @@ exports.locals = {
 /* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 exports.i(__webpack_require__(38), undefined);
-exports.i(__webpack_require__(16), undefined);
+exports.i(__webpack_require__(14), undefined);
 
 // module
 exports.push([module.i, ".BottomCard-container {\n}\n\n.BottomCard-inner {\n    margin: 15px auto 0 30%;\n}\n\n.BottomCard-content {\n    margin-right: 120px;\n}\n\n.BottomCard-icon {\n    width: 60px;\n}\n\n.BottomCard-blurb {\n    width: 70%;\n    max-width: 400px;\n    padding-left: 40px;\n    margin: 0;\n    float: left;\n}\n\n.BottomCard-avatarContainer {\n    float: left;\n    max-width: 100px;\n}\n\n@media only screen and (max-width: 800px) {\n    .BottomCard-blurb {\n        padding: 15px;\n        margin: 0 auto;\n        float: none;\n        max-width: none;\n        width: 100%;\n    }\n\n    .BottomCard-avatarContainer {\n        width: 100%;\n        max-width: 200px;\n        padding: 15px;\n        float: none;\n    }\n}\n\n@media only screen and (max-width: 420px) {\n\n    .BottomCard-avatarContainer {\n        max-width: 100%;\n    }\n\n    .BottomCard-content {\n        margin-right: 0;\n    }\n\n    .BottomCard-inner {\n        margin-left: 0;\n    }\n}\n\n", ""]);
@@ -29054,7 +29054,7 @@ exports.push([module.i, ".BottomCard-container {\n}\n\n.BottomCard-inner {\n    
 // exports
 exports.locals = {
 	"container": "BottomCard-container " + __webpack_require__(38).locals["container"] + "",
-	"inner": "BottomCard-inner " + __webpack_require__(16).locals["cf"] + "",
+	"inner": "BottomCard-inner " + __webpack_require__(14).locals["cf"] + "",
 	"content": "BottomCard-content",
 	"icon": "BottomCard-icon",
 	"blurb": "BottomCard-blurb",
@@ -29065,22 +29065,22 @@ exports.locals = {
 /* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
-exports.i(__webpack_require__(16), undefined);
+exports.i(__webpack_require__(14), undefined);
 exports.i(__webpack_require__(37), undefined);
 
 // module
-exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 6px;\n    padding-left: 15px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 20px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 15px 15px 0;\n    min-width: 100px;\n    opacity: 0.85;\n    color: #333;\n\n}\n\n.FloatingCard-link:hover {\n    opacity: 1;\n    color: #00ABD6;\n}\n\n.FloatingCard-link:hover .FloatingCard-label {\n    opacity: 1;\n}\n\n.FloatingCard-iconContainer {\n    float: left;\n    width: 35px;\n    height: 35px;\n    padding: 0 8px;\n    background: blue;\n    border-radius: 50%;\n    margin-right: 7px;\n    line-height: 45px;\n}\n\n.FloatingCard-icon {\n    height: 100%;\n    /*line-height: 46px;*/\n\n}\n\n.FloatingCard-label {\n    float: left;\n    font-size: 13px;\n    font-family: \"Railway\", sans-serif;\n    text-transform: uppercase;\n    line-height: 31px;\n    opacity: 9;\n}\n\n\n@media only screen and (max-width: 420px) {\n    .FloatingCard-container {\n        margin-right: 0;\n    }\n\n    .FloatingCard-blurb {\n        padding: 15px;\n        margin: 0 auto;\n        float: none;\n        max-width: none;\n        width: 100%;\n    }\n\n    .FloatingCard-avatar {\n        display: none;\n    }\n\n    .FloatingCard-content {\n        margin-left: 0;\n    }\n\n    .FloatingCard-inner {\n        margin-left: 0;\n    }\n\n\n}\n\n", ""]);
+exports.push([module.i, ".FloatingCard-container {\n    margin-right: 100px;\n}\n\n.FloatingCard-content {\n    margin-left: 30%;\n}\n\n.FloatingCard-inner {\n    width: 305px;\n    float: left;\n    padding-top: 6px;\n    padding-left: 15px;\n}\n\n.FloatingCard-avatar {\n    float: left;\n    margin-right: 20px;\n    margin-bottom: 25px;\n    height: 100px;\n\n}\n\n.FloatingCard-socials {\n    float: left;\n}\n\n.FloatingCard-link {\n    float: left;\n    margin: 0 15px 15px 0;\n    min-width: 100px;\n    opacity: 0.85;\n    color: #333;\n\n}\n\n.FloatingCard-link:hover {\n    opacity: 1;\n    color: #00ABD6;\n}\n\n.FloatingCard-link:hover .FloatingCard-label {\n    opacity: 1;\n}\n\n.FloatingCard-iconContainer {\n    float: left;\n    width: 35px;\n    height: 35px;\n    padding: 0 8px;\n    background: blue;\n    border-radius: 50%;\n    margin-right: 7px;\n    line-height: 45px;\n}\n\n.FloatingCard-icon {\n    height: 100%;\n    /*line-height: 46px;*/\n\n}\n\n.FloatingCard-label {\n    float: left;\n    font-size: 13px;\n    font-family: \"Railway\", sans-serif;\n    text-transform: uppercase;\n    line-height: 31px;\n    opacity: 9;\n}\n\n\n@media only screen and (max-width: 750px) {\n\n    .FloatingCard-avatar {\n        display: none;\n    }\n\n    .FloatingCard-container {\n        margin-right: 0;\n    }\n\n    .FloatingCard-content {\n        padding-bottom: 5px;\n        margin-left: 0;\n    }\n\n    .FloatingCard-inner {\n        margin: 0 auto;\n        padding-left: 0;\n        float: none;\n    }\n}\n\n@media only screen and (max-width: 560px) {\n\n    .FloatingCard-blurb {\n        padding: 15px;\n        margin: 0 auto;\n        float: none;\n        max-width: none;\n        width: 100%;\n    }\n\n\n}\n\n", ""]);
 
 // exports
 exports.locals = {
-	"container": "FloatingCard-container " + __webpack_require__(16).locals["cf"] + "",
-	"content": "FloatingCard-content",
+	"container": "FloatingCard-container " + __webpack_require__(14).locals["cf"] + "",
+	"content": "FloatingCard-content " + __webpack_require__(14).locals["cf"] + "",
 	"inner": "FloatingCard-inner",
 	"avatar": "FloatingCard-avatar " + __webpack_require__(37).locals["container"] + "",
 	"socials": "FloatingCard-socials",
-	"link": "FloatingCard-link " + __webpack_require__(16).locals["cf"] + "",
+	"link": "FloatingCard-link " + __webpack_require__(14).locals["cf"] + "",
 	"label": "FloatingCard-label",
 	"iconContainer": "FloatingCard-iconContainer",
 	"icon": "FloatingCard-icon",
@@ -29091,16 +29091,16 @@ exports.locals = {
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
-exports.i(__webpack_require__(16), undefined);
+exports.i(__webpack_require__(14), undefined);
 
 // module
 exports.push([module.i, ".Item-container {\n    display: block;\n    line-height: 24px;\n    margin-bottom: 8px;\n}\n\n.Item-link {\n    display: block;\n    float: left;\n    width: 30%;\n    padding: 0;\n    text-align: right;\n    font-style: italic;\n    font-weight: bold;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n.Item-blurb {\n    display: block;\n    float: left;\n    width: 70%;\n    padding: 0 5px 0 10px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n@media only screen and (max-width: 350px) {\n    .Item-container {\n        margin-bottom: 16px;\n    }\n\n    .Item-link {\n        width: 100%;\n        text-align: left;\n    }\n\n    .Item-blurb {\n        width: 100%;\n        padding: 0;\n    }\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "Item-container " + __webpack_require__(16).locals["cf"] + "",
+	"container": "Item-container " + __webpack_require__(14).locals["cf"] + "",
 	"link": "Item-link",
 	"blurb": "Item-blurb"
 };
@@ -29109,7 +29109,7 @@ exports.locals = {
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
@@ -31811,7 +31811,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -33276,7 +33276,7 @@ var AutoFocusUtils = __webpack_require__(126);
 var CSSPropertyOperations = __webpack_require__(128);
 var DOMLazyTree = __webpack_require__(20);
 var DOMNamespaces = __webpack_require__(42);
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 var DOMPropertyOperations = __webpack_require__(65);
 var EventPluginHub = __webpack_require__(24);
 var EventPluginRegistry = __webpack_require__(30);
@@ -34742,7 +34742,7 @@ module.exports = ReactDOMInput;
 
 
 
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 var ReactComponentTreeHook = __webpack_require__(7);
 
 var warning = __webpack_require__(2);
@@ -35711,7 +35711,7 @@ module.exports = {
 
 
 
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 var EventPluginRegistry = __webpack_require__(30);
 var ReactComponentTreeHook = __webpack_require__(7);
 
@@ -36621,7 +36621,7 @@ module.exports = ReactHostOperationHistoryHook;
 
 
 
-var DOMProperty = __webpack_require__(15);
+var DOMProperty = __webpack_require__(16);
 var EventPluginHub = __webpack_require__(24);
 var EventPluginUtils = __webpack_require__(43);
 var ReactComponentEnvironment = __webpack_require__(46);

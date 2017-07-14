@@ -4,6 +4,7 @@
 }
 
 .content {
+    composes: cf from '../general.css';
     margin-left: 30%;
 }
 
@@ -73,10 +74,29 @@
 }
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 750px) {
+
+    .avatar {
+        display: none;
+    }
+
     .container {
         margin-right: 0;
     }
+
+    .content {
+        padding-bottom: 5px;
+        margin-left: 0;
+    }
+
+    .inner {
+        margin: 0 auto;
+        padding-left: 0;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 560px) {
 
     .blurb {
         padding: 15px;
@@ -84,18 +104,6 @@
         float: none;
         max-width: none;
         width: 100%;
-    }
-
-    .avatar {
-        display: none;
-    }
-
-    .content {
-        margin-left: 0;
-    }
-
-    .inner {
-        margin-left: 0;
     }
 
 
