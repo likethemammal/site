@@ -29,6 +29,16 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .content {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .inner {
+        margin: 0;
+        padding: 0 12%;
+    }
+
     .blurb {
         padding: 15px;
         margin: 0 auto;
@@ -40,23 +50,27 @@
     .avatarContainer {
         width: 100%;
         max-width: 200px;
-        padding: 15px;
+        padding-top: 15px;
         float: none;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 420px) {
 
+    .inner {
+        padding: 15px;
+    }
+
     .avatarContainer {
         max-width: 100%;
+        padding: 15px;
     }
 
-    .content {
-        margin-right: 0;
-    }
-
-    .inner {
-        margin-left: 0;
-    }
 }
 
+@media only screen and (max-width: 365px) {
+    .blurb {
+        padding: 0;
+    }
+}
