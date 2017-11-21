@@ -7,7 +7,7 @@ import Item from './Item'
 export default class Section extends Component {
     render() {
 
-        const { values, title } = this.props
+        const { values, title, children } = this.props
         const items = values.map((item, i) => <Item
             key={i}
             {...item}
@@ -25,6 +25,7 @@ export default class Section extends Component {
             <ul className={css.list}>
                 {items}
             </ul>
+            {children}
         </section>
     }
 }

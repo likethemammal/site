@@ -19,10 +19,6 @@ const config = {
         // publicPath: '/public',
     },
 
-    // devServer: {
-    //     contentBase: path.resolve(__dirname, './src'),
-    // },
-
     // devtool: 'source-map',
 
     module: {

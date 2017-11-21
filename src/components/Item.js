@@ -20,6 +20,7 @@ export default class Item extends Component {
         const nameAndLinkEl = <a
             href={link}
             className={css.link}
+            target="_blank"
         >
             {name}
         </a>

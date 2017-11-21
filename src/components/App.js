@@ -13,6 +13,8 @@ import { isNearBottom } from '../utils'
 
 const BOTTOM_OFFSET = 170
 
+import SVG from './SVG'
+import CodeMentorSVG from '../assets/codementor_contact_me.svg'
 
 export default class App extends Component {
     state = {
@@ -42,16 +44,18 @@ export default class App extends Component {
     render() {
 
         const { bottom } = this.state
-        const data = window._jekyll_data
+        const jekyll_data = window._jekyll_data
         const mounted = bottom !== void(0)
 
         const sections = section_order.map((key, i) => <Section
             {...{
                 key: key,
                 title: key,
-                values: data[key]
+                values: jekyll_data[key]
             }}
-        />)
+        >
+
+        </Section>)
 
         const socialValues = _.map(socials, (({label, link, icon, blurb}) => ({
             link,
@@ -71,6 +75,21 @@ export default class App extends Component {
 
             <div className={css.inner}>
                 {sections}
+                <Section
+                    title="professional"
+                    values={jekyll_data['professional']}
+                >
+                    <div
+                        className={css.codeMentorWrapper}
+                    >
+                        <a
+                            className={css.codeMentor}
+                            href="https://www.codementor.io/likethemammal/"
+                        >
+                            <SVG raw={CodeMentorSVG}/>
+                        </a>
+                    </div>
+                </Section>
                 <Section
                     title="socials"
                     values={socialValues}

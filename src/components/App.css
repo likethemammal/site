@@ -86,6 +86,15 @@
     opacity: 0.05;
 }
 
+.codeMentorWrapper {
+    text-align: center;
+    padding: 25px 15px 0 15px;
+}
+
+.codeMentor {
+    display: inline-block;
+}
+
 @media only screen and (min-width: 1000px) {
     .bg {
         background-image: url('/dist/images/1.2048_mini.jpg');

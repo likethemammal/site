@@ -32,9 +32,7 @@
     "start:jekyll": "bundle exec jekyll serve",
     "build": "babel-node ./node_modules/webpack/bin/webpack.js",
     "build:old": "babel-node ./node_modules/webpack -p",
-    "build:watch": "nodemon --ignore './dist/app.bundle.js' --ignore './_site' ./node_modules/babel-cli/bin/babel-node.js ./node_modules/webpack/bin/webpack.js",
-    "dev": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "dev-on-server": "nodemon ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --exec babel-node"
+    "build:watch": "nodemon --ignore './dist/app.bundle.js' --ignore './_site' ./node_modules/babel-cli/bin/babel-node.js ./node_modules/webpack/bin/webpack.js"
   },
   "author": "Chris Dolphin",
   "license": "ISC"
