@@ -48,7 +48,7 @@ Todo:
 
 //--answer stackoverflow question with jsonify
 //babelrc all other projects on Github
-//add readme to example
+//add readme to example repos
 //add raw-loader to other projects
 //change app.js in other projects
 //add new _data dir structure to example
