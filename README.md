@@ -40,9 +40,9 @@ Todo:
 //--get bg image
 //--make font size bigger for most text
 
-//use rems where I should
+//--use rems where I should
 //do semantic html everywhere
-//use rems for things
+//--use rems for things
 //rename card to bio everywhere
 
 
@@ -50,7 +50,6 @@ Todo:
 //babelrc all other projects on Github
 //add readme to example repos
 //add raw-loader to other projects
-//change app.js in other projects
 //add new _data dir structure to example
 //add autoprefixer to other projects
 

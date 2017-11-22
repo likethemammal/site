@@ -1,0 +1,29 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #333;
+    margin: 45px 0;
+    background: #74acdc;
+    font-family: "abril-text", serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: #0062ad;
+}
+
+a:hover {
+    color: #00ABD6;
+}
+
+* {
+    box-sizing: border-box;
+}
