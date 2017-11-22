@@ -10,18 +10,18 @@
 
 .inner {
     width: 305px;
-    float: left;
     padding-top: 6px;
     padding-left: 15px;
+    float: left;
 }
 
 .avatar {
     composes: container from './Avatar.css';
-    float: left;
+    height: 100px;
     margin-right: 20px;
     margin-bottom: 25px;
-    height: 100px;
-
+    margin-left: -3px;
+    float: left;
 }
 
 .socials {
@@ -30,11 +30,11 @@
 
 .link {
     composes: cf from '../general.css';
-    float: left;
     margin: 0 15px 15px 0;
     min-width: 100px;
     opacity: 0.85;
     color: #333;
+    float: left;
 
 }
 
@@ -48,28 +48,26 @@
 }
 
 .iconContainer {
-    float: left;
-    width: 35px;
-    height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
     padding: 0 8px;
+    margin-right: 7px;
+    line-height: 4.4rem;
+    float: left;
     background: blue;
     border-radius: 50%;
-    margin-right: 7px;
-    line-height: 45px;
 }
 
 .icon {
     height: 100%;
-    /*line-height: 46px;*/
-
 }
 
 .label {
     float: left;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-family: "Railway", sans-serif;
     text-transform: uppercase;
-    line-height: 31px;
+    line-height: 3.1rem;
     opacity: 9;
 }
 
@@ -123,15 +121,15 @@
     }
 
     .label {
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 1.2rem;
+        line-height: 3rem;
     }
 
     .iconContainer {
         width: 30px;
         height: 30px;
         padding: 0 7px;
-        line-height: 36px;
+        line-height: 3.6rem;
 
     }
 }

@@ -1,3 +1,5 @@
+import autoprefixer from 'autoprefixer'
+import pixrem from 'pixrem'
 
 import path from 'path'
 
@@ -40,6 +42,19 @@ const config = {
                             modules: true,
                             localIdentName: '[name].[local]'
                         },
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: function () {
+                                return [
+                                    autoprefixer('last 10 versions', 'ie 10'),
+                                    pixrem({
+                                        rootValue: 10,
+                                    }),
+                                ]
+                            }
+                        }
                     },
                 ],
             },
