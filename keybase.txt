@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/likethemammal
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://likethemammal.com
+  * I am likethemammal (https://keybase.io/likethemammal) on keybase.
+  * I have a public key ASB5N4AgkQ1DpLNIR1FSmcPki3DhltKJnpfShJBghTN1Kgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ba005a5ae1e4f5b8d87fb524cb6fe1be731486a86e760430cb8a166a799a94990a",
+      "host": "keybase.io",
+      "kid": "012079378020910d43a4b34847515299c3e48b70e196d2899e97d28490608533752a0a",
+      "uid": "c85094fbf01d829c7a9ac625001b4d19",
+      "username": "likethemammal"
+    },
+    "merkle_root": {
+      "ctime": 1514963011,
+      "hash": "17df4eac70d5d7d1e6cbf2c3df05144382e42e89b30fc93d53e7ae90a5c8aaee85b3ad839aca3f6d71ce19e4133478333d45c7f76d4de900b01a4687a2d6d7a2",
+      "hash_meta": "63ff53356a7db9bb76295fda6872f1ddb993977a472b4df6fe28826af8f944ce",
+      "seqno": 1881001
+    },
+    "service": {
+      "hostname": "likethemammal.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1514963094,
+  "expire_in": 504576000,
+  "prev": "c9ef9e6d522078a0872602b2e23f4b61df9d1d5f129127cd5f6ddba76dd1a493",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgeTeAIJENQ6SzSEdRUpnD5Itw4ZbSiZ6X0oSQYIUzdSoKp3BheWxvYWTFA097ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYmEwMDVhNWFlMWU0ZjViOGQ4N2ZiNTI0Y2I2ZmUxYmU3MzE0ODZhODZlNzYwNDMwY2I4YTE2NmE3OTlhOTQ5OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNzkzNzgwMjA5MTBkNDNhNGIzNDg0NzUxNTI5OWMzZTQ4YjcwZTE5NmQyODk5ZTk3ZDI4NDkwNjA4NTMzNzUyYTBhIiwidWlkIjoiYzg1MDk0ZmJmMDFkODI5YzdhOWFjNjI1MDAxYjRkMTkiLCJ1c2VybmFtZSI6Imxpa2V0aGVtYW1tYWwifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTQ5NjMwMTEsImhhc2giOiIxN2RmNGVhYzcwZDVkN2QxZTZjYmYyYzNkZjA1MTQ0MzgyZTQyZTg5YjMwZmM5M2Q1M2U3YWU5MGE1YzhhYWVlODViM2FkODM5YWNhM2Y2ZDcxY2UxOWU0MTMzNDc4MzMzZDQ1YzdmNzZkNGRlOTAwYjAxYTQ2ODdhMmQ2ZDdhMiIsImhhc2hfbWV0YSI6IjYzZmY1MzM1NmE3ZGI5YmI3NjI5NWZkYTY4NzJmMWRkYjk5Mzk3N2E0NzJiNGRmNmZlMjg4MjZhZjhmOTQ0Y2UiLCJzZXFubyI6MTg4MTAwMX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJsaWtldGhlbWFtbWFsLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM4In0sImN0aW1lIjoxNTE0OTYzMDk0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImM5ZWY5ZTZkNTIyMDc4YTA4NzI2MDJiMmUyM2Y0YjYxZGY5ZDFkNWYxMjkxMjdjZDVmNmRkYmE3NmRkMWE0OTMiLCJzZXFubyI6MTEsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAKR47g+P9Qr7Cgsd4US5+1ri8hhXIuUHjHjytKZpP57AOLrMp0QkHDsBMfOTvs7wlevgAOEIxQWXeByctROnfDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIN65lH06aiYz5d8Idv/TFICAdPDK0+aOg3mHOjH3p1Yio3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/likethemammal
+
+==================================================================
