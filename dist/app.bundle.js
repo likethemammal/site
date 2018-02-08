@@ -24332,13 +24332,14 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, ".Section-container {\n    background: rgba(255,255,255,0.9);\n    max-width: 850px;\n    width: 100%;\n    padding: 15px 25px 30px 15px;\n    margin: 0 auto 35px auto;\n    border-radius: 2px;\n}\n\n.Section-container:last-child {\n    margin-bottom: 0;\n}\n\n.Section-heading {\n    margin-left: 30%;\n    padding-left: 10px;\n}\n\n.Section-title {\n    margin: 15px 0 5px;\n    padding: 0;\n    color: #9d9d85;\n    font-family: \"Railway\", sans-serif;\n    font-size: 1.4rem;\n    font-weight: normal;\n    text-transform: uppercase;\n}\n\n.Section-list {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}", ""]);
+exports.push([module.i, ".Section-container {\n    background: rgba(255,255,255,0.9);\n    max-width: 850px;\n    width: 100%;\n    padding: 15px 25px 30px 15px;\n    margin: 0 auto 35px auto;\n    border-radius: 2px;\n}\n\n.Section-container:last-child {\n    margin-bottom: 0;\n}\n\n.Section-heading {\n    margin-left: 30%;\n    padding-left: 10px;\n}\n\n.Section-title {\n    margin: 15px 0 5px;\n    padding: 0;\n}\n\n.Section-link {\n    color: #9d9d85;\n    font-family: \"Railway\", sans-serif;\n    font-size: 1.4rem;\n    font-weight: normal;\n    text-transform: uppercase;\n    text-decoration: none;\n}\n\n.Section-link:hover {\n    text-decoration: underline;\n    color: inherit;\n}\n\n.Section-list {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}", ""]);
 
 // exports
 exports.locals = {
 	"container": "Section-container",
 	"heading": "Section-heading",
 	"title": "Section-title",
+	"link": "Section-link",
 	"list": "Section-list"
 };
 
@@ -28142,11 +28143,12 @@ var Section = function (_Component) {
                     key: i
                 }, item));
             });
+            var hash = '#' + title.toLowerCase();
 
             return _react2.default.createElement(
                 'section',
                 {
-                    id: '#' + title.toLowerCase(),
+                    id: hash,
                     className: _Section2.default.container
                 },
                 _react2.default.createElement(
@@ -28155,7 +28157,11 @@ var Section = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { className: _Section2.default.title },
-                        title.toUpperCase()
+                        _react2.default.createElement(
+                            'a',
+                            { href: hash, className: _Section2.default.link },
+                            title.toUpperCase()
+                        )
                     )
                 ),
                 _react2.default.createElement(
@@ -29101,7 +29107,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 exports.i(__webpack_require__(15), undefined);
 
 // module
-exports.push([module.i, ".Item-container {\n    display: block;\n    line-height: 24px;\n    line-height: 2.4rem;\n    margin-bottom: 8px;\n}\n\n.Item-link {\n    display: block;\n    float: left;\n    width: 30%;\n    padding: 0;\n    text-align: right;\n    font-style: italic;\n    font-weight: bold;\n    overflow: hidden;\n    -o-text-overflow: ellipsis;\n       text-overflow: ellipsis;\n}\n\n.Item-blurb {\n    display: block;\n    float: left;\n    width: 70%;\n    padding: 0 5px 0 10px;\n    overflow: hidden;\n    -o-text-overflow: ellipsis;\n       text-overflow: ellipsis;\n}\n\n@media only screen and (max-width: 350px) {\n    .Item-container {\n        margin-bottom: 16px;\n    }\n\n    .Item-link {\n        width: 100%;\n        text-align: left;\n    }\n\n    .Item-blurb {\n        width: 100%;\n        padding: 0;\n    }\n}", ""]);
+exports.push([module.i, ".Item-container {\n    display: block;\n    line-height: 24px;\n    line-height: 2.4rem;\n    margin-bottom: 8px;\n    font-size: 17.5px;\n    font-size: 1.75rem;\n}\n\n.Item-link {\n    display: block;\n    float: left;\n    width: 30%;\n    padding: 0;\n    text-align: right;\n    font-style: italic;\n    font-weight: bold;\n    overflow: hidden;\n    -o-text-overflow: ellipsis;\n       text-overflow: ellipsis;\n}\n\n.Item-blurb {\n    display: block;\n    float: left;\n    width: 70%;\n    padding: 0 5px 0 10px;\n    overflow: hidden;\n    -o-text-overflow: ellipsis;\n       text-overflow: ellipsis;\n}\n\n@media only screen and (max-width: 350px) {\n    .Item-container {\n        margin-bottom: 16px;\n    }\n\n    .Item-link {\n        width: 100%;\n        text-align: left;\n    }\n\n    .Item-blurb {\n        width: 100%;\n        padding: 0;\n    }\n}", ""]);
 
 // exports
 exports.locals = {
@@ -29211,13 +29217,14 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, ".Section-container {\n    background: rgba(255,255,255,0.9);\n    max-width: 850px;\n    width: 100%;\n    padding: 15px 25px 30px 15px;\n    margin: 0 auto 35px auto;\n    -webkit-border-radius: 2px;\n            border-radius: 2px;\n}\n\n.Section-container:last-child {\n    margin-bottom: 0;\n}\n\n.Section-heading {\n    margin-left: 30%;\n    padding-left: 10px;\n}\n\n.Section-title {\n    margin: 15px 0 5px;\n    padding: 0;\n    color: #9d9d85;\n    font-family: \"Railway\", sans-serif;\n    font-size: 14px;\n    font-size: 1.4rem;\n    font-weight: normal;\n    text-transform: uppercase;\n}\n\n.Section-list {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}", ""]);
+exports.push([module.i, ".Section-container {\n    background: rgba(255,255,255,0.9);\n    max-width: 850px;\n    width: 100%;\n    padding: 15px 25px 30px 15px;\n    margin: 0 auto 35px auto;\n    -webkit-border-radius: 2px;\n            border-radius: 2px;\n}\n\n.Section-container:last-child {\n    margin-bottom: 0;\n}\n\n.Section-heading {\n    margin-left: 30%;\n    padding-left: 10px;\n}\n\n.Section-title {\n    margin: 15px 0 5px;\n    padding: 0;\n}\n\n.Section-link {\n    color: #9d9d85;\n    font-family: \"Railway\", sans-serif;\n    font-size: 14px;\n    font-size: 1.4rem;\n    font-weight: normal;\n    text-transform: uppercase;\n    text-decoration: none;\n}\n\n.Section-link:hover {\n    text-decoration: underline;\n    color: inherit;\n}\n\n.Section-list {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}", ""]);
 
 // exports
 exports.locals = {
 	"container": "Section-container",
 	"heading": "Section-heading",
 	"title": "Section-title",
+	"link": "Section-link",
 	"list": "Section-list"
 };
 

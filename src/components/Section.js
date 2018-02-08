@@ -12,14 +12,17 @@ export default class Section extends Component {
             key={i}
             {...item}
         />)
+        const hash = `#${title.toLowerCase()}`
 
         return <section
-            id={`#${title.toLowerCase()}`}
+            id={hash}
             className={css.container}
         >
             <div className={css.heading}>
                 <div className={css.title}>
-                    {title.toUpperCase()}
+                    <a href={hash} className={css.link}>
+                        {title.toUpperCase()}
+                    </a>
                 </div>
             </div>
             <ul className={css.list}>

@@ -19,11 +19,20 @@
 .title {
     margin: 15px 0 5px;
     padding: 0;
+}
+
+.link {
     color: #9d9d85;
     font-family: "Railway", sans-serif;
     font-size: 1.4rem;
     font-weight: normal;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: inherit;
 }
 
 .list {
