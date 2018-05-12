@@ -84,7 +84,7 @@ export default class App extends Component {
                     >
                         <a
                             className={css.codeMentor}
-                            href="https://www.codementor.io/likethemammal/"
+                            href="https://www.codementor.io/likethemammal"
                         >
                             <SVG raw={CodeMentorSVG}/>
                         </a>
