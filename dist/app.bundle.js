@@ -27688,7 +27688,7 @@ var App = function (_Component) {
                                 'a',
                                 {
                                     className: _App2.default.codeMentor,
-                                    href: 'https://www.codementor.io/likethemammal/'
+                                    href: 'https://www.codementor.io/likethemammal'
                                 },
                                 _react2.default.createElement(_SVG2.default, { raw: _codementor_contact_me2.default })
                             )
