@@ -1,18 +1,48 @@
-import autoprefixer from 'autoprefixer'
-import pixrem from 'pixrem'
+const webpack = require('webpack')
+const autoprefixer = require('autoprefixer')
+const pixrem = require('pixrem')
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
-import path from 'path'
+
+const path = require('path')
 
 const plugins = [
-
+    // new LodashModuleReplacementPlugin,
+    new webpack.optimize.UglifyJsPlugin,
+    new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify('production')
+    })
 ]
+
+const css_loader = {
+    loader: 'css-loader',
+    options: {
+        modules: true,
+        localIdentName: '[name].[local]',
+    },
+}
+
+const postcss_loader = {
+    loader: 'postcss-loader',
+    options: {
+        plugins: function () {
+            return [
+                autoprefixer('last 10 versions', 'ie 10'),
+                pixrem({
+                    rootValue: 10,
+                    replace: true,
+                }),
+            ]
+        }
+    }
+}
 
 const config = {
 
     context: path.resolve(__dirname, './src'),
 
     entry: {
-        app: './app.js',
+        app: './index.js',
     },
 
     output: {
@@ -20,47 +50,75 @@ const config = {
         path:  path.resolve(__dirname, 'dist/'),
     },
 
-    devtool: 'source-map',
-
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
-                use: [{
-                    loader: 'babel-loader',
-                }],
+                use: [
+                    'babel-loader',
+                    'source-map-loader',
+                ],
             },
             {
                 test: /\.css$/,
                 use: [
                     'style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            localIdentName: '[name].[local]'
-                        },
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            plugins: function () {
-                                return [
-                                    autoprefixer('last 10 versions', 'ie 10'),
-                                    pixrem({
-                                        rootValue: 10,
-                                    }),
-                                ]
-                            }
-                        }
-                    },
+                    css_loader,
+                    postcss_loader,
                 ],
             },
             {
+                test: /\.less/,
+                use: [
+                    'style-loader',
+                    css_loader,
+                    postcss_loader,
+                    'less-loader',
+                ],
+            },
+            {
+                test: /\.json$/,
+                use: ["json-loader"],
+                exclude: /(node_modules)/,
+            },
+            {
                 test: /\.(svg)$/,
-                use: ['raw-loader']
-            }
+                use: ['raw-loader'],
+                // exclude: /(node_modules)/,
+            },
+            {
+                test: /\.(jpe?g|png|gif?)(\?[a-z0-9=&.]+)?$/,
+                use: [
+                    // {
+                    //     loader: 'image-webpack-loader',
+                    //     options: {
+                    //         mozjpeg: {
+                    //             progressive: true,
+                    //             quality: 65
+                    //         },
+                    //         // optipng.enabled: false will disable optipng
+                    //         optipng: {
+                    //             enabled: false,
+                    //         },
+                    //         pngquant: {
+                    //             quality: '65-90',
+                    //             speed: 4
+                    //         },
+                    //         gifsicle: {
+                    //             interlaced: false,
+                    //         },
+                    //         // the webp option will enable WEBP
+                    //         webp: {
+                    //             quality: 75
+                    //         }
+                    //     },
+                    // },
+                    "url-loader?mimetype=image/[ext]&limit=1000&name=[name].[ext]",
+                    // 'base64-inline-loader?limit=10000&name=data:image/[ext];base64,[name]',
+                ]
+            },
+
         ]
 
     },

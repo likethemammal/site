@@ -1,3 +1,11 @@
+- name: D.Va Emote Heart
+  link: https://github.com/likethemammal/dva-heart-emote
+  blurb: A WebGL remake of the heart container animation from D.Va's <a href="https://web.archive.org/web/20180521075307/https://vignette.wikia.nocookie.net/overwatch/images/7/7c/DVa_heartbreaker.gif/revision/latest/scale-to-width-down/640?cb=20160830231249">Heartbreaker</a> emote. Built with A-Frame and React
+
+- name: Overwatch UI elements
+  link: https://github.com/likethemammal/overwatch-settings-stepper#related
+  blurb: A series of React components modeling elements of Overwatch's design. Styled with simple HTML/CSS. Easily importable.
+
 - name: react-native-arcade-button
   link: https://github.com/likethemammal/react-native-arcade-button
   blurb: A React Native component shaped after an arcade button, using only StyleSheet for styling.
@@ -6,23 +14,10 @@
   link: https://github.com/likethemammal/css-visualizer
   blurb: Music visualizers made entirely from DOM elements and CSS3. No SVG, Canvas, or WebGL used. <a href="http://likethemammal.github.io/css-visualizer">Live Demo.</a>
 
-- name: Daisywheel.js
-  link: http://daisywheeljs.org
-  blurb: The <a target="_blank" href="http://store.steampowered.com/bigpicture/">Steam "Big Picture"</a> Daisywheel ported to HTML5. Supports the Gamepad API.
-
-- name: gamepad-micro
-  link: http://likethemammal.github.io/gamepad-micro/example.html
-  blurb: Library that interfaces with the Gamepad API and publishes gamepad update events. Used in DaisywheelJS. <a target="_blank" href="http://likethemammal.github.io/gamepad-micro/example.html">Live Demo</a>
-
 - name: visualizer-micro
   link: http://likethemammal.github.io/visualizer-micro/example.html
   blurb: A JS micro library for just the getSpectrum and getWaveform methods from <a target="_blank" href="https://github.com/jsantell/dancer.js">Dancer.js</a> using Web Audio API. <a target="_blank" href="https://http://likethemammal.github.io/visualizer-micro/example.html">Live Demo</a>
 
-- name: Leap-Boilerplate
-  link: https://github.com/likethemammal/Leap-Boilerplate
-  blurb: Basic boilerplate for the <a target="_blank" href="https://github.com/leapmotion/leapjs">leap.js</a> library that visualizes when leap gestures fire.
-
-- name: SavePoint
-  link: https://github.com/likethemammal/SavePoint
-  blurb: Chrome extension that saves the page's scroll and snaps it back when desired.
-
+- name: gamepad-micro
+  link: http://likethemammal.github.io/gamepad-micro/example.html
+  blurb: Library that interfaces with the Gamepad API and publishes gamepad update events. Used in DaisywheelJS. <a target="_blank" href="http://likethemammal.github.io/gamepad-micro/example.html">Live Demo</a>

@@ -12,6 +12,7 @@ export default class FloatingCard extends Component {
     render() {
 
         const els = _.map(socials, (({ icon, label, link, color }, key) => {
+
             return <a
                 key={key}
                 href={link}

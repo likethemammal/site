@@ -16,6 +16,8 @@ const BOTTOM_OFFSET = 170
 import SVG from './SVG'
 import CodeMentorSVG from '../assets/codementor_contact_me.svg'
 
+import LOW_RES_BACKGROUND_SRC from '../assets/low_res_background.jpg'
+
 export default class App extends Component {
     state = {
         bottom: void(0),
@@ -46,6 +48,9 @@ export default class App extends Component {
         const { bottom } = this.state
         const jekyll_data = window._jekyll_data
         const mounted = bottom !== void(0)
+        const bg_styles = {
+            backgroundImage: `url('dist/${LOW_RES_BACKGROUND_SRC}')`
+        }
 
         const sections = section_order.map((key, i) => <Section
             {...{
@@ -65,7 +70,7 @@ export default class App extends Component {
 
         return <div ref="view" className={css.container}>
 
-            <div className={css.bg} />
+            <div className={css.bg} style={bg_styles}/>
 
             <header className={css.header}>
                 <h1 className={css.headerText}>

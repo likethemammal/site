@@ -69,7 +69,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: top center no-repeat #46554b;
+    background: center center no-repeat #46554b;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -97,12 +97,10 @@
 
 @media only screen and (min-width: 1000px) {
     .bg {
-        background-image: url('/dist/images/1.2048_mini.jpg');
+        background-image: url('/dist/images/1.2048_mini.jpg') !important;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .bg {
-        background-image: url('/dist/images/1.1200_mini.jpg');
-    }
+
 }
