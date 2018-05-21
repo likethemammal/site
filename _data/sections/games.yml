@@ -2,6 +2,10 @@
   link: http://likethemammal.github.io/Casper/
   blurb: First-person flashlight game. Made in a weekend for <a target="_blank" href="http://bacongamejam.org/jams/bacongamejam-10/">Bacon Game Jam 10</a>.
 
+- name: Emoji Hero (Game Design Doc)
+  link: https://docs.google.com/document/d/1QDuna7ONKWMIytomJctfVBDPXJP5tQ3w9Wt3Pntkxgk/edit?usp=sharing
+  blurb: The concept for a game that showcases <a href="https://github.com/likethemammal/daisywheeljs">DaisywheelJS</a>. Showing off how easy it can be to type with a controller when given a well designed interface.
+
 - name: 10Secs
   link: http://likethemammal.github.io/10Secs/
   blurb: 10 Seconds to Survive. Created for <a target="_blank" href="http://www.ludumdare.com/">Ludum Dare 27</a>.

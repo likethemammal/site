@@ -96,6 +96,14 @@
 
 @media only screen and (max-width: 560px) {
 
+    .content {
+        padding-bottom: 0;
+    }
+
+    .link {
+        margin-bottom: 0;
+    }
+
     .blurb {
         padding: 15px;
         margin: 0 auto;
