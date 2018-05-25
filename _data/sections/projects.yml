@@ -1,18 +1,22 @@
 - name: D.Va Emote Heart
   link: https://github.com/likethemammal/dva-heart-emote
   blurb: A WebGL remake of the heart container animation from D.Va's <a href="https://web.archive.org/web/20180521075307/https://vignette.wikia.nocookie.net/overwatch/images/7/7c/DVa_heartbreaker.gif/revision/latest/scale-to-width-down/640?cb=20160830231249">Heartbreaker</a> emote. Built with A-Frame and React
+  image: https://raw.githubusercontent.com/likethemammal/dva-heart-emote/master/example/dva_heart_emote_demo.gif
 
 - name: Overwatch UI elements
   link: https://github.com/likethemammal/overwatch-settings-stepper#related
   blurb: A series of React components modeling elements of Overwatch's design. Styled with simple HTML/CSS. Easily importable.
+  image: https://raw.githubusercontent.com/likethemammal/overwatch-settings-select/master/example/example.png
 
 - name: react-native-arcade-button
   link: https://github.com/likethemammal/react-native-arcade-button
   blurb: A React Native component shaped after an arcade button, using only StyleSheet for styling.
+  image: https://raw.githubusercontent.com/likethemammal/react-native-arcade-button/master/example/screenshot.png
 
 - name: CSS Visualizers
   link: https://github.com/likethemammal/css-visualizer
   blurb: Music visualizers made entirely from DOM elements and CSS3. No SVG, Canvas, or WebGL used. <a href="http://likethemammal.github.io/css-visualizer">Live Demo.</a>
+  image: https://raw.githubusercontent.com/likethemammal/css-visualizer/master/imgs/screenshot.png
 
 - name: visualizer-micro
   link: http://likethemammal.github.io/visualizer-micro/example.html

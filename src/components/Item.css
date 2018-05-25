@@ -30,8 +30,8 @@
 .tooltip {
     position: relative;
     top: 50px;
-    left: -50px;
-    max-width: 200px;
+    left: -25px;
+    max-width: 300px;
     border-radius: 3px;
 }
 
