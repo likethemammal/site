@@ -1,16 +1,14 @@
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 const pixrem = require('pixrem')
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 
 const path = require('path')
 
 const plugins = [
-    // new LodashModuleReplacementPlugin,
     new webpack.optimize.UglifyJsPlugin,
     new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify('production')
+        'process.env.NODE_ENV': JSON.stringify('development')
     })
 ]
 

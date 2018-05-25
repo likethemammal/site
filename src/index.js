@@ -5,6 +5,7 @@ import App from './components/App'
 
 import './global.css'
 import 'raf/polyfill'
+import 'react-tippy/dist/tippy.css';
 
 ReactDOM.render(
     <App />,

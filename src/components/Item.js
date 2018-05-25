@@ -3,9 +3,14 @@ import _ from 'lodash'
 
 import css from './Item.css'
 
+import {
+    Tooltip,
+} from 'react-tippy'
+
 export default class Item extends Component {
+
     render() {
-        const { blurb, link, name } = this.props
+        const { blurb, link, name, image } = this.props
 
         const stringBlurb = !_.isObject(blurb)
         const noHref = !link
@@ -31,9 +36,19 @@ export default class Item extends Component {
             {name}
         </span>
 
-        return <li className={css.container}>
-            {noHref ?  nameEl : nameAndLinkEl}
-            {blurbEl}
-        </li>
+        return <Tooltip
+            html={<img className={css.tooltip} src={image} />}
+            trigger="mouseenter"
+            position="right"
+            distance={0}
+            followCursor={true}
+        >
+            <li
+                className={css.container}
+            >
+                {noHref ?  nameEl : nameAndLinkEl}
+                {blurbEl}
+            </li>
+        </Tooltip>
     }
 }
