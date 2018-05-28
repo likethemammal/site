@@ -1,0 +1,9 @@
+{% include top.html %}
+
+<script>
+    window._jekyll_data = {{ site.data.overwatch | jsonify }}
+</script>
+
+<script src="/dist/overwatch.bundle.js"></script>
+
+{% include bottom.html %}

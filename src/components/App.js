@@ -68,6 +68,8 @@ export default class App extends Component {
             blurb,
         })))
 
+        const isOverwatchPath = window.location.pathname === '/overwatch/'
+
         return <div ref="view" className={css.container}>
 
             <div className={css.bg} style={bg_styles}/>

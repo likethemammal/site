@@ -41,6 +41,7 @@ const config = {
 
     entry: {
         app: './index.js',
+        overwatch: './overwatch.js'
     },
 
     output: {
