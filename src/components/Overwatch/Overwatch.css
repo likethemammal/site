@@ -2,24 +2,3 @@
     text-align: center;
 }
 
-.project_container {
-    display: inline-block;
-    margin: 0 12px 15px 12px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-    background: #f6f6f6;
-    text-align: left;
-    overflow: hidden;
-}
-
-.project {
-    width: 400px;
-    padding: 10px 15px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid #777;
-}
-
-.icon {
-    max-width: 300px;
-}

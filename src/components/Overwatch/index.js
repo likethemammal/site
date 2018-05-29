@@ -4,14 +4,9 @@ import css from './Overwatch.css'
 import './global.css'
 
 import PageClamp from './PageClamp'
-import general from '@likethemammal/general-components'
+import Project from './Project'
 
-const { SVG } = general.components
-
-import GITHUB_SVG from 'svg-icon/dist/svg/logos/github.svg'
-import CODEPEN_SVG from 'svg-icon/dist/svg/logos/codepen.svg'
-
-export default class Avatar extends Component {
+export default class Overwatch extends Component {
 
     static defaultProps = {
         className: css.container,
@@ -26,7 +21,6 @@ export default class Avatar extends Component {
         const { projects } = jekyll_data
 
         let projects_withoutFirst = [...projects]
-        let svg
 
         projects_withoutFirst.shift()
 
@@ -35,43 +29,10 @@ export default class Avatar extends Component {
         return <div className={className}>
             <PageClamp>
                 <div>
-                    <div
-                        className={css.project_container}
-                    >
-                        <div
-                            className={css.project}
-                        >
-                            {projects[0].name}
-                            <SVG raw={svg}/>
-                        </div>
-                    </div>
+                    <Project {...projects[0]} />
                 </div>
                 <div>
-                    {projects_withoutFirst.map(({ name, type }, i) => {
-
-                        switch (type) {
-                            case 'github':
-                                svg = GITHUB_SVG
-                                break;
-                            case 'codepen':
-                                svg = CODEPEN_SVG
-                                break;
-                        }
-
-                        return <div
-                            key={i}
-                            className={css.project_container}
-                        >
-                            <div
-                                className={css.project}
-                            >
-                                {name}
-                                <div className={css.icon}>
-                                    <SVG raw={svg}/>
-                                </div>
-                            </div>
-                        </div>
-                    })}
+                    {projects_withoutFirst.map((project, i) => <Project {...project} key={i}/>)}
                 </div>
             </PageClamp>
         </div>

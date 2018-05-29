@@ -1,0 +1,39 @@
+.container {
+    display: inline-block;
+    margin: 0 12px 27px 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    background: #f6f6f6;
+    text-align: left;
+}
+
+.desc {
+    position: relative;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px 15px;
+    border-top: 2px solid white;
+    border-bottom: 1px solid #777;
+}
+
+.heading {
+    display: block;
+    padding: 15px 15px 7px 15px;
+    background: hsla(220, 23%, 54%, 1);
+    border-bottom: 1px solid black;
+    border-radius: 4px 4px 0 0;
+    transition: 100ms ease-in-out;
+}
+
+.heading:hover {
+    background: hsla(220, 23%, 60%, 1);
+}
+
+.icon {
+    width: 75px;
+}
+
+.title {
+    margin: 0;
+}
