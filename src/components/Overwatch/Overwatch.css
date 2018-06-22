@@ -1,6 +1,6 @@
 .container {
     /*background: #387af5;*/
-
+    overflow: hidden;
 }
 
 .clamp {
@@ -88,7 +88,33 @@
 
 .button:hover {
     background: #ffc466;
+}
 
+.socials {
+    opacity: 0.8;
+
+    transition: opacity 200ms ease-in-out;
+}
+
+.socials:hover {
+    opacity: 1;
+}
+
+.social {
+    display: block;
+    height: 60px;
+    background: white;
+
+    transition: transform 170ms ease-in-out;
+}
+
+.social:hover {
+    transform: scale(1.2);
+}
+
+.icon {
+    display: inline-block;
+    height: 100%;
 }
 
 @keyframes fadeIn{

@@ -8,6 +8,12 @@ import './global.css'
 import PageClamp from './PageClamp'
 import Project from './Project'
 
+import general from '@likethemammal/general-components'
+
+const { SVG } = general.components
+
+import {socials} from './assets'
+
 export default class Overwatch extends Component {
 
     static defaultProps = {
@@ -72,6 +78,40 @@ export default class Overwatch extends Component {
                         {lastSet}
                     </div>
                 </PageClamp>
+                <div className={css.top_hat}>
+                    <PageClamp className={css.clamp}>
+                        <span className={css.section_title}>socials</span>
+                    </PageClamp>
+                </div>
+                <div className={css.socials}>
+                    {socials.map(({ color, icon, bg_color, link }, i) => {
+
+                        const styles = {
+                            borderColor: color,
+                            backgroundColor: bg_color,
+                        }
+
+                        const svg_styles = {
+                            width: 35,
+                            paddingTop: 14,
+                        }
+
+                        return <a
+                            key={i}
+                            target="_blank"
+                            href={link}
+                            className={css.social}
+                            style={styles}
+                        >
+                            <i className={css.icon}>
+                                <SVG
+                                    raw={icon}
+                                    style={svg_styles}
+                                />
+                            </i>
+                        </a>
+                    })}
+                </div>
             </div>
         </div>
     }
