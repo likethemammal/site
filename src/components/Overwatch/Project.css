@@ -1,18 +1,25 @@
 .container {
+    position: relative;
     display: inline-block;
-    margin: 0 15px 35px 17px;
+    width: 430px;
+    margin: 0 26px 53px 22px;
     border: 1px solid #333;
-    border-radius: 3px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.2);
     background: #f6f6f6;
     text-align: left;
     vertical-align: top;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.01);
 }
 
 .desc {
     position: relative;
     border-radius: 3px;
-    width: 400px;
     padding: 15px;
     border-top: 2px solid white;
     border-bottom: 1px solid #777;
@@ -28,10 +35,15 @@
     font-size: 1.9rem;
 }
 
+.title_link:hover {
+    text-decoration: underline;
+}
+
 .heading {
+    height: 130px;
     position: relative;
     display: block;
-    padding: 100px 15px 7px 15px;
+    padding: 0 15px;
     border-bottom: 1px solid black;
     border-radius: 4px 4px 0 0;
     transition: 100ms ease-in-out;
@@ -55,7 +67,8 @@
 }
 
 .icon {
-    position: relative;
+    position: absolute;
+    bottom: 3px;
 }
 
 .title {

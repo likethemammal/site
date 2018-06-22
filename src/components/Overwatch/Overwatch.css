@@ -1,12 +1,114 @@
 .container {
-    background: #387af5;
+    /*background: #387af5;*/
+
+}
+
+.clamp {
+    padding: 0 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 45px auto;
+    padding-top: 160px;
+}
+
+.top_hat {
+    color: white;
+    height: 55px;
+    margin: 0;
+    background: linear-gradient(125deg, rgba(255,255,255,0.4), rgba(255,255,255,0.15));
+    text-align: left;
+
+    font-family: Raleway, Arial;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.section_title {
+    display: block;
+    animation: slideIn 750ms ease-in-out;
 }
 
 .projects {
     text-align: center;
     background: #387af5;
+    padding-top: 20px;
 }
 
 .cta {
     background: #1562c6;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.signup {
+    display: inline-block;
+    width: 475px;
+}
+
+.input {
+    display: block;
+    line-height: 42px;
+    width: 100%;
+    padding: 0 12px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 16px;
+
+    animation: fadeIn 560ms ease-in-out;
+}
+
+.button {
+    display: inline-block;
+    background: #ff9c00;
+    color: white;
+    border: 0;
+    outline: 0;
+    line-height: 38px;
+    margin: 19px 15px 15px;
+    padding: 0 17px;
+    font-size: 17px;
+    font-family: Raleway;
+    font-weight: bold;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background 200ms ease-in-out;
+    animation: fadeIn 750ms ease-in-out;
+
+}
+
+.button:hover {
+    background: #ffc466;
+
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideIn{
+    0%{
+        opacity:0;
+        transform:translateX(-10px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
 }

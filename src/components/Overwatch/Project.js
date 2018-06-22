@@ -46,6 +46,7 @@ export default class Project extends Component {
         return <div
             className={css.container}
         >
+
             <a
                 target="_blank"
                 className={css.heading}
@@ -60,7 +61,13 @@ export default class Project extends Component {
                 className={css.desc}
             >
                 <h3 className={css.title}>
-                    {name}
+                    <a
+                        className={css.title_link}
+                        target="_blank"
+                        href={link}
+                    >
+                        {name}
+                    </a>
                 </h3>
                 <p className={css.blurb} dangerouslySetInnerHTML={{__html:blurb}} />
             </div>
