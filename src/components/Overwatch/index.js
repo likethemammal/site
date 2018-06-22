@@ -16,8 +16,6 @@ export default class Overwatch extends Component {
         const { className } = this.props
         const jekyll_data = window._jekyll_data
 
-        console.log(jekyll_data)
-
         const { projects } = jekyll_data
 
         let projects_withoutFirst = [...projects]
@@ -25,16 +23,28 @@ export default class Overwatch extends Component {
         projects_withoutFirst.shift()
 
 
-
         return <div className={className}>
-            <PageClamp>
-                <div>
-                    <Project {...projects[0]} />
-                </div>
-                <div>
-                    {projects_withoutFirst.map((project, i) => <Project {...project} key={i}/>)}
-                </div>
-            </PageClamp>
+            <div className={css.projects}>
+                <PageClamp>
+                    <div>
+                        <Project {...projects[0]} />
+                    </div>
+                    <div>
+                        {projects_withoutFirst.map((project, i) => <Project {...project} key={i}/>)}
+                    </div>
+                </PageClamp>
+            </div>
+            <div className={css.cta}>
+                <PageClamp>
+                    <form
+                        method="POST"
+                        action="https://liveformhq.com/form/127beff6-19e4-4b53-b787-670d29ebac46"
+                    >
+                        <input type="email" name="email" placeholder="Your email"/>
+                            <button type="submit">Send</button>
+                    </form>
+                </PageClamp>
+            </div>
         </div>
     }
 }

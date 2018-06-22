@@ -1,4 +1,12 @@
 .container {
-    text-align: center;
+    background: #387af5;
 }
 
+.projects {
+    text-align: center;
+    background: #387af5;
+}
+
+.cta {
+    background: #1562c6;
+}
