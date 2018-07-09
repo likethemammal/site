@@ -45,13 +45,16 @@ export default class Overwatch extends Component {
                     <div>
                         {firstSet}
                     </div>
+                    <div>
+                        {lastSet}
+                    </div>
                 </PageClamp>
-                <div className={css.top_hat}>
+                <div className={css.top_hat} style={{display: 'none'}}>
                     <PageClamp className={css.clamp}>
                         <span className={css.section_title}>updates</span>
                     </PageClamp>
                 </div>
-                <div className={css.cta}>
+                <div className={css.cta} style={{display: 'none'}}>
                     <PageClamp>
                         <form
                             className={css.signup}
@@ -73,11 +76,6 @@ export default class Overwatch extends Component {
                         </form>
                     </PageClamp>
                 </div>
-                <PageClamp>
-                    <div>
-                        {lastSet}
-                    </div>
-                </PageClamp>
                 <div className={css.top_hat}>
                     <PageClamp className={css.clamp}>
                         <span className={css.section_title}>socials</span>

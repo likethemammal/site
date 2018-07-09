@@ -1,18 +1,18 @@
 - name: Settings Dropdown
-  link: https://github.com/likethemammal/overwatch-settings-stepper#related
-  blurb: A series of React components modeling elements of Overwatch's design. Styled with simple HTML/CSS. Easily importable.
+  link: https://github.com/likethemammal/overwatch-settings-select
+  blurb: A React component modeling the Overwatch Settings select/dropdown element
   banner: https://raw.githubusercontent.com/likethemammal/overwatch-settings-select/master/example/example.png
   type: github
 
 - name: Settings Stepper
-  link: https://github.com/likethemammal/overwatch-settings-stepper#related
-  blurb: A series of React components modeling elements of Overwatch's design. Styled with simple HTML/CSS. Easily importable.
+  link: https://github.com/likethemammal/overwatch-settings-stepper
+  blurb: A React component modeling the Overwatch Settings the stepper and toggle UI elements
   banner: https://raw.githubusercontent.com/likethemammal/overwatch-settings-stepper/master/example/example.png
   type: github
 
 - name: Table
-  link: https://github.com/likethemammal/react-native-arcade-button
-  blurb: A React Native component shaped after an arcade button, using only StyleSheet for styling.
+  link: https://github.com/likethemammal/overwatch-table
+  blurb: A React component modeling the Overwatch custom game table element
   banner: https://raw.githubusercontent.com/likethemammal/overwatch-table/master/example/example.png
   type: github
 
@@ -23,8 +23,8 @@
   type: github
 
 - name: Side Navigation
-  link: https://github.com/likethemammal/overwatch-settings-stepper#related
-  blurb: A series of React components modeling elements of Overwatch's design. Styled with simple HTML/CSS. Easily importable.
+  link: https://github.com/likethemammal/overwatch-side-nav
+  blurb: A React component modeling the official Overwatch website side-navigation
   banner: https://raw.githubusercontent.com/likethemammal/overwatch-side-nav/master/example/example.png
   type: github
 
