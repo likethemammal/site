@@ -1,3 +1,15 @@
+- name: Jan 8, 2019
+  link:
+  blurb: <a target="_blank" href="https://alligator.io/react/storybook-with-redux/">Using Storybook with React & Redux</a>
+
+- name: Nov 24, 2018
+  link:
+  blurb: <a target="_blank" href="https://alligator.io/react/intro-react-static/">High Level Introduction to React Static</a>
+
+- name: Oct 31, 2018
+  link:
+  blurb: <a target="_blank" href="https://alligator.io/react/skeleton-screens-react-and-react-native/">Skeleton screens with React and React Native</a>
+
 - name: May 19, 2018
   link:
   blurb: <a target="_blank" href="https://medium.com/@LikeTheMammal/what-i-found-curating-awesome-overwatch-c566c078acaf">What I found curating an Awesome Overwatch collection</a>
