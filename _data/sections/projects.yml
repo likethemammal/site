@@ -20,7 +20,7 @@
 
 - name: visualizer-micro
   link: http://likethemammal.github.io/visualizer-micro/example.html
-  blurb: A JS micro library for just the getSpectrum and getWaveform methods from <a target="_blank" href="https://github.com/jsantell/dancer.js">Dancer.js</a> using Web Audio API. <a target="_blank" href="https://http://likethemammal.github.io/visualizer-micro/example.html">Live Demo</a>
+  blurb: A JS micro library for just the getSpectrum and getWaveform methods from <a target="_blank" href="https://github.com/jsantell/dancer.js">Dancer.js</a> using Web Audio API. <a target="_blank" href="https://likethemammal.github.io/visualizer-micro/example.html">Live Demo</a>
 
 - name: gamepad-micro
   link: http://likethemammal.github.io/gamepad-micro/example.html
