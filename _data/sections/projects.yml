@@ -16,8 +16,8 @@
 - name: CSS Visualizers
   link: http://likethemammal.github.io/css-visualizer/iframe.html?id=visualizer--default
   blurb: Music visualizers made entirely from DOM elements and CSS3. No SVG, Canvas, or WebGL used. <a href="http://likethemammal.github.io/css-visualizer">Live Demo.</a>
-  image: https://raw.githubusercontent.com/likethemammal/css-visualizer/master/imgs/screenshot.png
-
+  image: https://raw.githubusercontent.com/likethemammal/css-visualizer/7214f9eb1b37496006896cd1083d74387e97a9ec/imgs/screenshot.png
+  
 - name: visualizer-micro
   link: http://likethemammal.github.io/visualizer-micro/example.html
   blurb: A JS micro library for just the getSpectrum and getWaveform methods from <a target="_blank" href="https://github.com/jsantell/dancer.js">Dancer.js</a> using Web Audio API. <a target="_blank" href="https://likethemammal.github.io/visualizer-micro/example.html">Live Demo</a>
