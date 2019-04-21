@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: likethemammal.com 
-Token: 1cab6c9a6099342e7c0fcab43c34fe203d169ac5c25f235c82d8af79d2f3ae94
