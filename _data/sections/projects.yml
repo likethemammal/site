@@ -14,8 +14,8 @@
   image: https://raw.githubusercontent.com/likethemammal/react-native-arcade-button/master/example/screenshot.png
 
 - name: CSS Visualizers
-  link: http://likethemammal.github.io/css-visualizer/iframe.html?id=visualizer--default
-  blurb: Music visualizers made entirely from DOM elements and CSS3. No SVG, Canvas, or WebGL used. <a href="http://likethemammal.github.io/css-visualizer">Live Demo.</a>
+  link: https://github.com/likethemammal/css-visualizer
+  blurb: Music visualizers made entirely from DOM elements and CSS3. No SVG, Canvas, or WebGL used. <a href="http://likethemammal.github.io/css-visualizer/iframe.html?id=visualizer--default">Live Demo.</a>
   image: /dist/images/visualizer-demo.gif
   
 - name: visualizer-micro
